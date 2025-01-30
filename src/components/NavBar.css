@@ -1,0 +1,587 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute items on the left and right */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-weight: 400; /* Normal weight */
+  font-size: 15px; /* Adjust size as needed */
+  letter-spacing: 1px; /* Adds spacing similar to the example */
+}
+
+.navbar-links {
+  position: absolute; /* Allow links to be positioned independently */
+  left: 50%; /* Move links to the center of the navbar */
+  transform: translateX(-50%); /* Adjust position to truly center */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add spacing between links */
+  
+}
+
+.navbar-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+  margin: 5px; /* Adds horizontal space (15px) between the links */
+  position: relative; /* Ensure hover area covers the link */
+  z-index: 10; /* Make the link hoverable above other content */
+  /* height: 100%; */
+  
+  
+}
+
+.navbar-link:hover  {
+  color: #408eb2; /* Blue hover effect */
+  
+}
+
+.navbar-dropdown-container:hover .dropdown-chevron,
+.navbar-dropdown:hover .dropdown-chevron {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between buttons, login, and social icons */
+  margin-left: auto; /* Push this section to the far right */
+}
+
+
+.navbar-button {
+  background-color: #408eb2; 
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold; 
+  letter-spacing: 1px; /* Add spacing between letters */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #5d9dbb;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Spacing between the icons */
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Match width to make it circular */
+  border: 1px solid #333; /* Black border */
+  border-radius: 50%; /* Make it circular */
+  font-size: 1.2em; /* Adjust icon size */
+  color: #333; /* Default icon color */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  
+}
+
+.icon:hover {
+  color: #408eb2; /* Change icon color on hover */
+  border-color: #408eb2; /* Change border color on hover */
+}
+
+
+
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Add spacing between the logo and links */
+  margin-bottom: -50px;
+  margin-top: -50px;
+}
+
+.logo-image {
+  height: 150px; /* Adjust the height to fit your NavBar */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures the image scales nicely */
+}
+
+.navbar-dropdown {
+  position: relative; /* Relative to its parent for dropdown positioning */
+  
+}
+
+/* dropdowns for "about" and "more"; not "classes" */
+
+.dropdown-content { 
+opacity: 0; /* Start with dropdown hidden */
+visibility: hidden; /* Hide dropdown from screen readers and layout */
+position: absolute; /* Positioned relative to the navbar-dropdown */
+top: 100%; /* Place below the parent link */
+margin-left: 4px; /* Add margin between the word and dropdown */
+min-width: 190px; /* Add a minimum width to fit longer links */
+left: 0;
+background-color: white;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+padding: 10px 0;
+z-index: 1000;
+border-radius: 5px; /* Rounded corners for dropdown */
+transition: opacity 0.4s ease, visibility 0.3s ease; /* Smooth transition for opacity and visibility */
+  
+}
+
+.dropdown-content a {
+  display: block; /* Stack links vertically */
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.classes-dropdown-content a {
+  display: block; /* Stack links vertically */
+  padding: 10px 15px; /* Adjust padding for spacing */
+  color: #333; /* Match the "About" font color */
+  text-decoration: none;
+  font-size: 1em; /* Match the font size of the "About" dropdown */
+  font-weight: 400; /* Normal weight to match "About" */
+  text-transform: none; /* Disable uppercase to match "About" */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  /* background-color: #f9f9f9; */
+  color: #408eb2;
+}
+
+/* Show Dropdown on Hover */
+.navbar-dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Make visible for screen readers and layout */
+}
+
+.dropdown-chevron {
+  font-size: 0.8em; /* Adjust size */
+  margin-left: 5px; /* Space between text and arrow */
+  transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+
+.dropdown-content a:hover {
+  color: #408eb2; /* Blue hover effect */
+}
+
+
+
+/* Ensure the hover applies to the entire container */
+.navbar-dropdown-container {
+position: relative; /* Position relative for dropdown alignment */
+}
+
+.navbar-dropdown-container:hover .classes-dropdown-content {
+display: grid; /* Make the dropdown visible */
+opacity: 1;
+visibility: visible;
+}
+
+/* Adjust dropdown content positioning */
+.classes-dropdown-content {
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevent it from blocking interactions */
+  position: absolute; /* Position it relative to the container */
+  top: 100%; /* Lower the dropdown */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-35%); /* Center the dropdown */
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add spacing inside dropdown */
+  z-index: 1000;
+  border-radius: 8px; /* Rounded corners */
+  transition: opacity 0.4s ease, visibility 0.3s ease;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, minmax(180px, 1fr)); /* Make columns smaller */
+  grid-template-rows: auto auto auto; /* Allow content to flow naturally */
+  gap: 10px; /* Reduce spacing between columns */
+  min-width: 500px; /* Reduce width of dropdown */
+  max-width: 90%; /* Prevent it from being too wide */
+  padding-right: 35px;
+}
+
+
+/* Move Featured Below Music */
+.featured-column {
+  grid-column: 2; /* Place it in the second column */
+  grid-row: 2; /* Move it below "Music" */
+  margin-top: -18.5rem;
+}
+
+/* Move FAQ Below Featured */
+.faq-column {
+  grid-column: 2; /* Place it in the second column */
+  grid-row: 3; /* Move it below "Featured" */
+  margin-top: -8.5rem;
+
+
+}
+
+.classes-dropdown-content a:hover {
+  /* background-color: #f9f9f9; Add hover effect similar to "About" */
+  color: #408eb2; /* Blue hover effect */
+}
+
+.classes-dropdown-content .dropdown-column {
+  display: flex;
+  flex-direction: column; /* Stack items vertically in each column */
+}
+
+.classes-dropdown-content .dropdown-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #408eb2; /* Blue Title */
+  margin-bottom: 10px;
+  margin-left: 15px;
+  border-bottom: 1px solid #408eb2; /* Dotted underline */
+  padding-bottom: 5px; /* Add some space between text and the line */
+}
+
+.classes-dropdown-content .dropdown-title-dance {
+  text-indent: -15px; /* Adjust the value as needed */
+}
+
+
+.navbar-dropdown:hover .classes-dropdown-content {
+  display: grid; /* Ensure grid layout when visible */
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Make visible for screen readers and layout */
+}
+
+
+
+/* Exact width */
+/* @media (width: 360px) {
+div {
+  color: red;
+}
+} */
+
+/* Minimum width */
+@media (max-width: 1200px) {
+  .navbar {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    padding: 10px 20px; /* Reduce padding to save space */
+  }
+
+  .navbar-links {
+    position: static; /* Reset absolute positioning for smaller screens */
+    transform: none; /* Remove centering transform */
+    justify-content: center; /* Center links */
+    gap: 10px; /* Reduce spacing between links */
+  }
+
+  .navbar-link {
+    font-size: 0.9em; /* Reduce font size for links */
+    margin: 0 5px; /* Reduce margins */
+    
+  }
+
+  .navbar-icons {
+    margin-left: 0; /* Reset left margin */
+    justify-content: center; /* Center icons */
+    gap: 10px; /* Adjust spacing between icons */
+  }
+
+  .navbar-button {
+    font-size: 0.7em; /* Reduce button font size */
+    padding: 8px 15px; /* Adjust button padding */
+    margin-left: 8px;
+
+  }
+
+  .navbar-logo img {
+    height: 120px; /* Reduce logo size */
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .icon {
+    width: 30px; /* Reduce icon size */
+    height: 30px;
+    font-size: 0.9em; /* Reduce icon font size */
+  }
+
+  .navbar-dropdown-container:hover .dropdown-chevron,
+  .navbar-dropdown:hover .dropdown-chevron {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+  }
+
+  .navbar-dropdown-container {
+    position: relative; /* Position relative for dropdown alignment */
+    }
+
+    .navbar-dropdown-container:hover .classes-dropdown-content {
+      display: grid; /* Make the dropdown visible */
+      opacity: 1;
+      visibility: visible;
+      }
+
+      
+      .classes-dropdown-content {
+        opacity: 0; /* Initially hidden */
+        visibility: hidden; /* Prevent it from blocking interactions */
+        position: absolute; /* Position it relative to the container */
+        top: 100%; /* Lower the dropdown */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-35%); /* Center the dropdown */
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px; /* Add spacing inside dropdown */
+        z-index: 1000;
+        border-radius: 8px; /* Rounded corners */
+        transition: opacity 0.4s ease, visibility 0.3s ease;
+        display: grid; /* Use grid layout */
+        grid-template-columns: repeat(2, minmax(180px, 1fr)); /* Make columns smaller */
+        grid-template-rows: auto auto auto; /* Allow content to flow naturally */
+        gap: 10px; /* Reduce spacing between columns */
+        min-width: 400px; /* Reduce width of dropdown */
+        max-width: 90%; /* Prevent it from being too wide */
+        padding-right: 35px;
+      }
+
+.classes-dropdown-content .dropdown-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #408eb2; /* Blue Title */
+  margin-bottom: 10px;
+  margin-left: 15px;
+  border-bottom: 1px solid #408eb2; /* Dotted underline */
+  padding-bottom: 5px; /* Add some space between text and the line */
+}
+
+.classes-dropdown-content a {
+  display: block; /* Stack links vertically */
+  padding: 10px 15px; /* Adjust padding for spacing */
+  color: #333; /* Match the "About" font color */
+  text-decoration: none;
+  font-size: 0.8rem; /* Match the font size of the "About" dropdown */
+  font-weight: 400; /* Normal weight to match "About" */
+  text-transform: none; /* Disable uppercase to match "About" */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Move Featured Below Music */
+.featured-column {
+  grid-column: 2; /* Place it in the second column */
+  grid-row: 2; /* Move it below "Music" */
+  margin-top: -17.5rem;
+}
+
+/* Move FAQ Below Featured */
+.faq-column {
+  grid-column: 2; /* Place it in the second column */
+  grid-row: 3; /* Move it below "Featured" */
+  margin-top: -8.5rem;
+
+
+}
+
+}
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+@media (max-width: 920px) {
+
+  .navbar {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    padding: 15px 20px; /* Reduce padding to save space */
+  }
+
+  .navbar-links {
+    position: static; /* Reset absolute positioning for smaller screens */
+    transform: none; /* Remove centering transform */
+    justify-content: center; /* Center links */
+    gap: 10px; /* Reduce spacing between links */
+    
+  }
+
+  .navbar-link {
+    font-size: 0.7em; /* Reduce font size for links */
+    margin: 0 5px; /* Reduce margins */
+  }
+
+  .navbar-icons {
+    margin-left: 0; /* Reset left margin */
+    justify-content: center; /* Center icons */
+    gap: 10px; /* Adjust spacing between icons */
+  }
+
+  .navbar-button {
+    font-size: 0.55em; /* Reduce button font size */
+    padding: 7px 14px; /* Adjust button padding */
+  }
+
+  .navbar-logo img {
+    height: 90px; /* Reduce logo size */
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+
+  .icon {
+    width: 25px; /* Reduce icon size */
+    height: 25px;
+    font-size: 0.8em; /* Reduce icon font size */
+  }
+
+  .navbar-dropdown-container .classes-dropdown-content,
+  .navbar-dropdown .dropdown-content {
+    display: none; /* Hide dropdown content for smaller screens */
+  }
+
+  .classes-dropdown-content {
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Prevent it from blocking interactions */
+    position: absolute; /* Position it relative to the container */
+    top: 100%; /* Lower the dropdown */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-35%); /* Center the dropdown */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Add spacing inside dropdown */
+    z-index: 1000;
+    border-radius: 8px; /* Rounded corners */
+    transition: opacity 0.4s ease, visibility 0.3s ease;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, minmax(180px, 1fr)); /* Make columns smaller */
+    grid-template-rows: auto auto auto; /* Allow content to flow naturally */
+    gap: 10px; /* Reduce spacing between columns */
+    min-width: 350px; /* Reduce width of dropdown */
+    max-width: 90%; /* Prevent it from being too wide */
+    padding-right: 35px;
+  }
+
+.classes-dropdown-content .dropdown-title {
+font-size: 0.8em;
+font-weight: 600;
+color: #408eb2; /* Blue Title */
+margin-bottom: 10px;
+margin-left: 15px;
+border-bottom: 1px solid #408eb2; /* Dotted underline */
+padding-bottom: 5px; /* Add some space between text and the line */
+}
+
+.classes-dropdown-content a {
+display: block; /* Stack links vertically */
+padding: 10px 15px; /* Adjust padding for spacing */
+color: #333; /* Match the "About" font color */
+text-decoration: none;
+font-size: 0.6rem; /* Match the font size of the "About" dropdown */
+font-weight: 400; /* Normal weight to match "About" */
+text-transform: none; /* Disable uppercase to match "About" */
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Move Featured Below Music */
+.featured-column {
+grid-column: 2; /* Place it in the second column */
+grid-row: 2; /* Move it below "Music" */
+margin-top: -16rem;
+}
+
+/* Move FAQ Below Featured */
+.faq-column {
+grid-column: 2; /* Place it in the second column */
+grid-row: 3; /* Move it below "Featured" */
+margin-top: -8rem;
+
+
+}
+
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-left: auto; /* Pushes the hamburger to the right */
+}
+
+.hamburger svg {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures elements are spaced properly */
+    padding: 15px 20px;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-link {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+
+  .navbar-logo img {
+    height: 90px; /* Reduce logo size */
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto; /* Pushes the hamburger to the right */
+  }
+
+  .navbar-icons {
+    display: none;
+  }
+
+  
+}
+
+

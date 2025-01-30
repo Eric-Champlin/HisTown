@@ -1,0 +1,159 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #232323;
+    padding: 20px 40px;
+    text-align: center;
+    gap: 20px;
+    padding-top: 10px;
+    color: #fff; /* Change all text to white by default */
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #fff; /* Ensure text within sections is white */
+    font-family: Arial, sans-serif;
+
+  }
+
+  .footer-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #fff; /* Ensure text within sections is white */
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+  }
+  
+  .footer-logo {
+    height: 100px;
+    margin-bottom: -20px;
+    margin-top: -15px;
+    
+  }
+  
+  .footer-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* Title text in white */
+    border-bottom: 1.5px solid;
+
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #fff; /* Links in white */
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    font-weight: 500;
+
+  }
+  
+  .footer-link:hover {
+    color: #d2d1d1; /* Hover effect for links */
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Match width to make it circular */
+    border: 1px solid #fff; /* White border for icons */
+    border-radius: 50%; /* Make it circular */
+    font-size: 1.2em; /* Adjust icon size */
+    color: #fff; /* Default icon color to white */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .footer-icon:hover {
+    color: #d2d1d1; /* Change icon color on hover */
+    border-color: #d2d1d1; /* Change border color on hover */
+  }
+  
+  @media (max-width: 1200px) {
+    .footer {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        padding: 10px 20px; /* Reduce padding to save space */
+    }
+  
+    .footer-section {
+      align-items: center; /* Ensure content stays centered */
+      text-align: center;
+    }
+  
+    .footer-logo {
+      height: 80px; /* Reduce logo size */
+      margin-bottom: -10px;
+      margin-top: -10px;
+    }
+  
+    .footer-title {
+      font-size: 1em; /* Reduce font size for titles */
+      margin-bottom: 8px; /* Adjust spacing */
+    }
+  
+    .footer-link {
+      font-size: 0.8em; /* Reduce font size for links */
+      margin-bottom: 4px; /* Adjust link spacing */
+    }
+  
+    .footer-icons {
+      justify-content: center; /* Center the icons */
+      gap: 10px; /* Reduce spacing between icons */
+    }
+  
+    .footer-icon {
+      width: 30px; /* Reduce size for icons */
+      height: 30px; /* Match width for circular icons */
+      font-size: 1em; /* Adjust icon font size */
+    }
+
+    .footer-section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: #fff; /* Ensure text within sections is white */
+        font-family: Arial, sans-serif;
+        font-size: 0.8em;
+      }
+  }
+  
+  @media (max-width: 880px) {
+    .footer {
+      padding: 15px; /* Reduce padding further for smaller screens */
+      gap: 20px; /* Adjust gap between sections */
+      
+    }
+  
+    .footer-logo {
+      height: 70px; /* Further reduce logo size */
+    }
+  
+    .footer-title {
+      font-size: 0.9em; /* Adjust title size for mobile */
+    }
+  
+    .footer-link {
+      font-size: 0.75em; /* Adjust link size for better readability */
+    }
+  
+    .footer-icon {
+      width: 25px; /* Smaller icons for mobile */
+      height: 25px;
+      font-size: 0.9em;
+    }
+  }
+  
