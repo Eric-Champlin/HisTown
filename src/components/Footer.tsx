@@ -30,13 +30,12 @@ const Footer = () => {
         <Link to="/music" className="footer-link">
           Music Lessons
         </Link>
-        <Link to="/more/studio-rental" className="footer-link">
-          Studio Rental
-        </Link>
         <Link to="/more/contact" className="footer-link">
           Contact
         </Link>
-
+        <Link to="/FAQ" className="footer-link">
+          FAQ
+        </Link>
       </div>
 
       {/* Right Section */}

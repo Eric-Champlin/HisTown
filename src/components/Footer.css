@@ -131,7 +131,7 @@
       }
   }
   
-  @media (max-width: 880px) {
+  @media (max-width: 930px) {
     .footer {
       padding: 15px; /* Reduce padding further for smaller screens */
       gap: 20px; /* Adjust gap between sections */
