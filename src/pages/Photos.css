@@ -1,0 +1,8 @@
+.underline-photos-videos {
+    width: 220px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto;
+    transform: skewX(-15deg);
+  }

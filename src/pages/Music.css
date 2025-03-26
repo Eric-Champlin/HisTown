@@ -1,0 +1,31 @@
+
+  
+  .music-title-underline {
+    width: 100px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto;
+    transform: skewX(-15deg);
+  }
+  
+/* Common styling for all images */
+.classes-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px;
+  }
+  
+  /* Unique object-position per card */
+  .piano-card img {
+    object-position: 50% 40%;
+  }
+  .violin-card img {
+    object-position: 50% 0%;
+  }
+  .vocal-card img {
+    object-position: 50% 40%;
+  }
+  
+  

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import './Footer.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -14,20 +14,20 @@ const Footer = () => {
           className="footer-logo"
         />
         <div className="footer-section1">
-            <div>1010 Perrone Way, Suite 200</div>
-        <div>Franklin, TN, 37069</div>
-        <div>(615) 840-8849</div>
-        <div>info@histown.com</div>
-      </div>
+          <div>1010 Perrone Way, Suite 200</div>
+          <div>Franklin, TN, 37069</div>
+          <div>(615) 840-8849</div>
+          <div>info@histown.com</div>
+        </div>
       </div>
 
       {/* Middle Section */}
       <div className="footer-section">
         <p className="footer-title">QUICK LINKS</p>
-        <Link to="/dance" className="footer-link">
+        <Link to="/classes/dance" className="footer-link">
           Dance Classes
         </Link>
-        <Link to="/music" className="footer-link">
+        <Link to="/classes/music" className="footer-link">
           Music Lessons
         </Link>
         <Link to="/more/contact" className="footer-link">

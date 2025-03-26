@@ -1,0 +1,91 @@
+/* 1. Banner Section */
+.classes-banner {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.classes-banner-image {
+  width: 100vw;
+  height: 35vh;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+/* 2. Header & Underline */
+.dresscode-header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.dance-classes-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dance-classes-title-underline-dresscode {
+  width: 100px;
+  height: 6px;
+  background-color: #408eb2;
+  border-radius: 3px;
+  margin: 0 auto;
+  transform: skewX(-15deg);
+  margin-bottom: -25px;
+}
+
+/* 3. Dress Code Content */
+.dresscode-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.dresscode-text {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.dresscode-section {
+  margin-bottom: 40px;
+}
+
+.dresscode-section h2 {
+  /* Let the heading be block-level and align its text to the left. */
+  display: block;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 10px 0;    /* space around heading */
+  padding-bottom: 5px;   /* small gap above the underline */
+}
+
+/* Pseudo-element approach using display: block */
+.dresscode-section h2::after {
+  content: "";
+  display: block;              /* becomes its own block under the text */
+  width: 60px;                 /* how wide you want the underline */
+  height: 3px;                 /* thickness of the underline */
+  margin-top: 0.5em;          /* space between text and underline */
+  background-color: #408eb2;   /* the blue color */
+  border-radius: 3px;
+  transform: skewX(-15deg);    /* angled look, if desired */
+}
+
+
+
+.dresscode-section p {
+  margin: 0;
+}

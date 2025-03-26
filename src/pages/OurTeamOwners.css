@@ -1,0 +1,85 @@
+/* ===============================
+   1) Banner (reuse your pattern)
+=============================== */
+.classes-banner {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .classes-banner-image {
+    width: 100vw;
+    height: 35vh;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+    z-index: 1000;
+  }
+  
+  /* ===============================
+     2) Owners Section
+  =============================== */
+  .owners-section {
+    max-width: 800px;  /* Limit the overall width of content */
+    margin: 0 auto 60px auto;  /* Center horizontally & add spacing below */
+    padding: 0 20px;   /* Some horizontal padding for smaller screens */
+    box-sizing: border-box;
+    text-align: left;  /* Paragraphs left-aligned by default */
+    font-family: Arial, sans-serif;
+  }
+
+  .dance-classes-title {
+    font-size: 3rem;      /* Large, bold font size */
+    font-weight: 900;     /* Extra-bold weight */
+    color: #333;          /* Dark text color */
+    margin-top: 40px;     /* Spacing above title */
+    margin-bottom: 10px;  /* Slight spacing below */
+    position: relative;
+    display: inline-block; /* So the underline can size itself to the text width */
+    text-align: center;    /* Center the text */
+  }
+  
+  .dance-classes-title-underline-owners {
+    width: 200px;         /* Adjust the underline width as needed */
+    height: 6px;          /* Thickness of the underline */
+    background-color: #408eb2; /* The blue color used across your project */
+    border-radius: 3px;   /* Slight rounding of corners */
+    margin: 0 auto 40px auto; /* Center it (left/right auto), plus spacing below */
+    transform: skewX(-15deg); /* Angled underline (optional) */
+  }
+  
+  
+  /* Heading: Ken & Teresa Farley */
+  .owners-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Image container & image */
+  .owners-image-container {
+    text-align: center;   /* Center the image horizontally */
+    margin-bottom: 30px;  /* Space below the image */
+  }
+  
+  .owners-image {
+    max-width: 300px;   /* Control how large the image can be */
+    height: auto;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  /* Paragraph text */
+  .owners-text {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .owners-text p {
+    margin-bottom: 1.2rem; /* Space between paragraphs */
+  }
+  

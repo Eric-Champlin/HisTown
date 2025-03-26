@@ -1,0 +1,134 @@
+.dance-classes-title-underline-tuition {
+    width: 200px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto;
+    transform: skewX(-15deg);
+  }
+
+/* Tuition.css */
+.tuition-page {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* 2. Banner Section */
+.dance-classes-banner {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.dance-classes-banner-image {
+  width: 100vw;
+  height: 35vh;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+
+.tuition-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.tuition-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-underline {
+  width: 200px; /* Longer width for main underline */
+  height: 5px;   /* Thicker height for main underline */
+  background-color: #408eb2;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.section-underline {
+  width: 80px;
+  height: 3px;
+  background-color: #408eb2;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.tuition-content {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.tuition-section h2,
+.fees-section h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.tuition-section p,
+.fees-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.fees-section {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.fee-column {
+  flex: 1;
+}
+
+.faq-button-container {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.all-dances-button-link {
+  text-decoration: none;
+}
+
+.all-dances-button {
+  background-color: #408eb2;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.all-dances-button:hover {
+  background-color: #317199;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tuition-title {
+    font-size: 2rem;
+  }
+
+  .tuition-content {
+    padding: 15px;
+  }
+
+  .fees-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

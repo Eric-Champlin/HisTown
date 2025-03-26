@@ -1,0 +1,127 @@
+/* 1. Basic Page Structure */
+.dance-classes-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Banner Section */
+.dance-classes-banner {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.dance-classes-banner-image {
+  width: 100vw;
+  height: 35vh;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+/* 3. Title & Underline */
+.dance-classes-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dance-classes-title-underline {
+  width: 100px;
+  height: 6px;
+  background-color: #408eb2;
+  border-radius: 3px;
+  margin: 0 auto 40px auto;
+  transform: skewX(-15deg);
+}
+
+/* 4. Grid of 12 Cards (4 Columns x 3 Rows) */
+.dance-classes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto 60px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* 5. Each Card + Label */
+.dance-classes-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dance-classes-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+.dance-classes-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dance-classes-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dance-classes-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.dance-classes-label {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+/* .dance-classes-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 15px;
+} */
+
+
+
+/* 6. Responsive: Stack Cards on Smaller Screens */
+@media (max-width: 980px) {
+  .dance-classes-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto);
+  }
+  .dance-classes-card {
+    width: 90%;
+    height: auto;
+  }
+}

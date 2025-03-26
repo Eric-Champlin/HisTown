@@ -1,0 +1,74 @@
+.dance-classes-title-underline-acro {
+    width: 75px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto;
+    transform: skewX(-15deg);
+  }
+  
+  .navbar-button {
+    background-color: #408eb2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-button:hover {
+    background-color: #5d9dbb;
+  }
+
+  .acro2-image img {
+    display: block;
+    margin: 60px auto 0; /* 60px top margin, auto left/right to center, 0 bottom margin */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .text-container-acro p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+    max-width: 600px;  /* Limit the width of the paragraph */
+    margin: 0 auto;    /* Center the paragraph horizontally */
+    text-align: center; /* Center the text inside the paragraph */
+    margin-bottom: 20px;
+  }
+  
+  .all-dances-button {
+    background-color: #408eb2;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto 20px auto; /* Center horizontally with auto margins */
+    display: block;
+    text-decoration: none !important;
+    margin-bottom: 50px;
+  }
+  
+  .all-dances-button:hover {
+    background-color: #5d9dbb;
+  }
+  
+  .all-dances-button-link {
+    text-decoration: none !important;
+
+  }
+  
+  
+    
+  

@@ -1,0 +1,24 @@
+
+  
+  .featured-title-underline {
+    width: 150px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto;
+    transform: skewX(-15deg);
+  }
+  
+
+  .classes-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+
+  

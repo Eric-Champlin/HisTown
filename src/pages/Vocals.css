@@ -1,0 +1,19 @@
+.dance-classes-title-underline-vocal {
+    width: 100px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto;
+    transform: skewX(-15deg);
+    margin-bottom: -35px;
+
+  }
+
+  .vocal-image img {
+    display: block;
+    margin: 60px auto 0; 
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  } 

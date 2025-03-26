@@ -1,0 +1,146 @@
+/***********************************
+  1. Basic Page Structure
+************************************/
+.classes-page {
+    /* This wrapper ensures we don't conflict with NavBar/Footer styling. */
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /***********************************
+    2. Banner Section
+  ************************************/
+/* 2. Banner Section */
+.dance-classes-banner {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.dance-classes-banner-image {
+  width: 100vw;
+  height: 35vh;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+
+  
+  /***********************************
+    3. Title & Underline
+  ************************************/
+  .classes-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #333;
+    margin-top: 40px;   /* Spacing above the title */
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block; /* So underline can be sized nicely */
+    text-align: center;
+  }
+  
+  .classes-title-underline {
+    /* Blue underline similar to your existing style */
+    width: 150px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto; /* Center it + space below for the grid */
+    transform: skewX(-15deg); /* Slant it a bit, if you want the same angled style */
+  }
+  
+  /***********************************
+    4. Grid of 6 Cards (3×2)
+  ************************************/
+  .classes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: auto auto;         /* 2 rows */
+    gap: 30px;                             /* Space between cards */
+    max-width: 1400px;
+    margin: 0 auto 60px auto; /* Center the grid and add space below for the footer */
+    padding: 0 40px;          /* Some horizontal padding inside the grid */
+    box-sizing: border-box;
+  }
+  
+  /***********************************
+    5. Each Card + Label
+  ************************************/
+  .classes-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* So the card + label are centered horizontally */
+  }
+  
+  /* The white box with the image inside it */
+  .classes-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 300px;  /* Same as your "Meet The Team" style */
+    height: 200px; /* Enough to show an image nicely */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px; /* Some space before the label */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .classes-card:hover  {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .classes-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .classes-label {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    /* text-transform: uppercase;  */
+  }
+
+  /* In Classes.css or a global .css */
+.classes-card-link {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit text color from parent */
+    display: inline-block;  /* Or block, whichever you prefer */
+    text-align: center;
+  }
+  
+  
+  /***********************************
+    6. Responsive / Media Queries
+  ************************************/
+  @media (max-width: 980px) {
+    .classes-title {
+      font-size: 2.4rem;
+    }
+    .classes-grid {
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(6, auto);
+    }
+    .classes-card {
+      width: 90%;
+      height: auto;
+    }
+    .classes-card img {
+      border-radius: 15px;
+    }
+  }
+  
+  

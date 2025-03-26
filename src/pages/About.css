@@ -1,0 +1,36 @@
+
+  
+  .about-title-underline {
+    width: 100px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto;
+    transform: skewX(-15deg);
+  }
+  
+
+  .classes-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 60px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  /* For the Our Team card: Lower the image inside the first card */
+.classes-grid-2x2 .classes-item:first-of-type .classes-card img {
+  /* Adjust the object position so the image “drops” a bit */
+  object-position: center 20%; /* change 40% to your desired vertical position */
+}
+
+/* For the Testimonials card: Shrink the image in the third card slightly without cropping */
+.classes-grid-2x2 .classes-item:nth-of-type(3) .classes-card img {
+  object-fit: contain;
+}
+
+
+
+  

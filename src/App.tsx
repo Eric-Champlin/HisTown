@@ -1,48 +1,48 @@
-import React from 'react'; 
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import About from './pages/About.tsx';
-import Acro from './pages/Acro.tsx';
-import Acting from './pages/Acting.tsx';
-import Adult from './pages/Adult.tsx';
-import Ballet from './pages/Ballet.tsx';
-import Barre from './pages/Barre.tsx';
-import Birthday from './pages/Birthday.tsx';
-import Classes from './pages/Classes.tsx';
-import Company from './pages/Company.tsx';
-import Contact from './pages/Contact.tsx';
-import Contemporary from './pages/Contemporary.tsx';
-import CreativeMovement from './pages/CreativeMovement.tsx';
-import Dance from './pages/Dance.tsx';
-import DressCode from './pages/DressCode.tsx';
-import FAQ from './pages/FAQ.tsx';
-import Featured from './pages/Featured.tsx';
-import Foundations from './pages/Foundations.tsx';
-import FreeTrial from './pages/FreeTrial.tsx';
-import Goddard from './pages/Goddard.tsx';
-import HipHop from './pages/HipHop.tsx';
-import Home from './pages/Home.tsx';
-import Jazz from './pages/Jazz.tsx';
-import Login from './pages/Login.tsx';
-import Modern from './pages/Modern.tsx';
-import MommyMe from './pages/MommyMe.tsx';
-import More from './pages/More.tsx';
-import Music from './pages/Music.tsx';
-import MusicalTheater from './pages/MusicalTheater.tsx';
-import OurStory from './pages/OurStory.tsx';
-import OurTeam from './pages/OurTeam.tsx';
-import OurTeamDance from './pages/OurTeamDance.tsx';
-import OurTeamMusic from './pages/OurTeamMusic.tsx';
-import OurTeamOwners from './pages/OurTeamOwners.tsx';
-import Photos from './pages/Photos.tsx';
-import Piano from './pages/Piano.tsx';
-import Rental from './pages/Rental.tsx';
-import Schedule from './pages/Schedule.tsx';
-import Store from './pages/Store.tsx';
-import Tap from './pages/Tap.tsx';
-import Testimonials from './pages/Testimonials.tsx';
-import Tuition from './pages/Tuition.tsx';
-import Violin from './pages/Violin.tsx';
-import Vocals from './pages/Vocals.tsx';
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import About from "./pages/About.tsx";
+import Acro from "./pages/Acro.tsx";
+import Acting from "./pages/Acting.tsx";
+import Adult from "./pages/Adult.tsx";
+import Ballet from "./pages/Ballet.tsx";
+import Barre from "./pages/Barre.tsx";
+import Birthday from "./pages/Birthday.tsx";
+import Classes from "./pages/Classes.tsx";
+import Company from "./pages/Company.tsx";
+import Contact from "./pages/Contact.tsx";
+import Contemporary from "./pages/Contemporary.tsx";
+import CreativeMovement from "./pages/CreativeMovement.tsx";
+import Dance from "./pages/Dance.tsx";
+import DressCode from "./pages/DressCode.tsx";
+import FAQ from "./pages/FAQ.tsx";
+import Featured from "./pages/Featured.tsx";
+import Foundations from "./pages/Foundations.tsx";
+import FreeTrial from "./pages/FreeTrial.tsx";
+import Goddard from "./pages/Goddard.tsx";
+import HipHop from "./pages/HipHop.tsx";
+import Home from "./pages/Home.tsx";
+import Jazz from "./pages/Jazz.tsx";
+import Login from "./pages/Login.tsx";
+import Modern from "./pages/Modern.tsx";
+import MommyMe from "./pages/MommyMe.tsx";
+import More from "./pages/More.tsx";
+import Music from "./pages/Music.tsx";
+import MusicalTheater from "./pages/MusicalTheater.tsx";
+import OurStory from "./pages/OurStory.tsx";
+import OurTeam from "./pages/OurTeam.tsx";
+import OurTeamDance from "./pages/OurTeamDance.tsx";
+import OurTeamMusic from "./pages/OurTeamMusic.tsx";
+import OurTeamOwners from "./pages/OurTeamOwners.tsx";
+import Photos from "./pages/Photos.tsx";
+import Piano from "./pages/Piano.tsx";
+import Rental from "./pages/Rental.tsx";
+import Schedule from "./pages/Schedule.tsx";
+import Store from "./pages/Store.tsx";
+import Tap from "./pages/Tap.tsx";
+import Testimonials from "./pages/Testimonials.tsx";
+import Tuition from "./pages/Tuition.tsx";
+import Violin from "./pages/Violin.tsx";
+import Vocals from "./pages/Vocals.tsx";
 
 const App = () => {
   return (
@@ -62,7 +62,10 @@ const App = () => {
           <Route path="/classes/company" element={<Company />} />
           <Route path="/more/contact" element={<Contact />} />
           <Route path="/classes/contemporary" element={<Contemporary />} />
-          <Route path="/classes/creative-movement" element={<CreativeMovement />} />
+          <Route
+            path="/classes/creative-movement"
+            element={<CreativeMovement />}
+          />
           <Route path="/classes/dance" element={<Dance />} />
           <Route path="/classes/dress-code" element={<DressCode />} />
           <Route path="/faq" element={<FAQ />} />

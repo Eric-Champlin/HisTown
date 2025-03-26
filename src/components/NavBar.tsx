@@ -1,22 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
   FaChevronDown,
   FaBars,
   FaTimes,
-} from 'react-icons/fa';
-import './NavBar.css';
+} from "react-icons/fa";
+import "./NavBar.css";
 
 const NavBar = () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
 
   return (
     <nav className="navbar">
@@ -33,12 +31,12 @@ const NavBar = () => {
 
       {/* Hamburger Icon (for mobile) */}
       <div className="hamburger" onClick={toggleMenu}>
-        <FaBars className={`hamburger-icon ${menuOpen ? 'hide' : 'show'}`} />
-        <FaTimes className={`hamburger-icon ${menuOpen ? 'show' : 'hide'}`} />
+        <FaBars className={`hamburger-icon ${menuOpen ? "hide" : "show"}`} />
+        <FaTimes className={`hamburger-icon ${menuOpen ? "show" : "hide"}`} />
       </div>
 
       {/* Navigation Links */}
-      <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
+      <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
         <li>
           <Link to="/home" className="navbar-link">
             HOME
@@ -138,7 +136,7 @@ const NavBar = () => {
         </li>
 
         {/* Mobile-Only: Logo, Social Icons, Free Trial & Login */}
-        
+
         <div className="navbar-logo-mobile">
           <Link to="/home">
             <img
@@ -148,7 +146,7 @@ const NavBar = () => {
             />
           </Link>
         </div>
-        
+
         <div className="navbar-icons-mobile">
           <div className="social-icons">
             <a
@@ -167,16 +165,15 @@ const NavBar = () => {
             >
               <FaFacebookF />
             </a>
-            
           </div>
-          <a 
-  href="https://app.thestudiodirector.com/histown/portal.sd?page=Login" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="login-mobile"
->
-  LOGIN
-</a>
+          <a
+            href="https://app.thestudiodirector.com/histown/portal.sd?page=Login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="login-mobile"
+          >
+            LOGIN
+          </a>
           <Link to="/free-trial">
             <button className="free-trial-mobile">FREE TRIAL</button>
           </Link>
@@ -186,40 +183,36 @@ const NavBar = () => {
       {/* Desktop-Only: Social Icons, Free Trial & Login */}
 
       <div className="navbar-icons">
-<div className="social-icons">
-  <a
-    href="https://www.instagram.com/histowndancestudio/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="icon"
-  >
-    <FaInstagram />
-  </a>
-  <a
-    href="https://www.facebook.com/HistownDanceStudio/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="icon"
-  >
-    <FaFacebookF />
-  </a>
-</div>
-<Link to="/free-trial">
-  <button className="navbar-button">FREE TRIAL</button>
-</Link>
-<a 
-href="https://app.thestudiodirector.com/histown/portal.sd?page=Login" 
-target="_blank" 
-rel="noopener noreferrer" 
-className="navbar-link"
->
-LOGIN
-</a>
-
-</div> 
-
-
-
+        <div className="social-icons">
+          <a
+            href="https://www.instagram.com/histowndancestudio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.facebook.com/HistownDanceStudio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <FaFacebookF />
+          </a>
+        </div>
+        <Link to="/free-trial">
+          <button className="navbar-button">FREE TRIAL</button>
+        </Link>
+        <a
+          href="https://app.thestudiodirector.com/histown/portal.sd?page=Login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="navbar-link"
+        >
+          LOGIN
+        </a>
+      </div>
     </nav>
   );
 };
