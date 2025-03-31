@@ -113,7 +113,7 @@ const NavBar = () => {
             <Link to="/about/our-team">OUR TEAM</Link>
             <Link to="/about/our-story">OUR STORY</Link>
             <Link to="/about/testimonials">TESTIMONIALS</Link>
-            <Link to="/about/photos-videos">PHOTOS/VIDEOS</Link>
+            <Link to="/about/photos-videos">K-LOVE FAN AWARDS</Link>
           </div>
         </li>
 

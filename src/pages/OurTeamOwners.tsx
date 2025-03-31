@@ -3,6 +3,8 @@ import "./OurTeamOwners.css";
 import NavBar from "../components/NavBar.tsx";
 import Footer from "../components/Footer.tsx";
 import NextSteps from "../Hooks/useInViewNextSteps.tsx";
+import { Link } from "react-router-dom"; 
+
 
 const OurTeamOwners = () => {
   return (
@@ -24,7 +26,7 @@ const OurTeamOwners = () => {
 
 
         <div style={{ textAlign: "center" }}>
-  <h1 className="dance-classes-title">Ken &amp; Teresa Farley</h1>
+  <h1 className="dance-classes-title-owners">THE FARLEY'S</h1>
   <div className="dance-classes-title-underline-owners"></div>
 </div>
 
@@ -40,7 +42,7 @@ const OurTeamOwners = () => {
         {/* Paragraphs */}
         <div className="owners-text">
           <p>
-            Ken and Teresa both share a love for the arts. Helping start Histown Dance 
+            Ken and Teresa Farley both share a love for the arts. Helping start Histown Dance 
             was something they felt strongly about because they have both seen firsthand 
             how dance can be a wonderful way of communicating God’s love, healing, and grace.
           </p>
@@ -72,7 +74,17 @@ const OurTeamOwners = () => {
             to serve dancers, families, and the greater community through Histown.
           </p>
         </div>
+
+<br></br>
+<Link to="/about/our-team" className="all-dances-button-link">
+          <button className="all-dances-button">OUR TEAM</button>
+        </Link>
+
       </section>
+
+
+
+  
 
       {/* Next Steps (if you want the grey skew after owners) */}
       <NextSteps />

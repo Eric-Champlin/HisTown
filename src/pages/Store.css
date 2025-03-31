@@ -6,3 +6,19 @@
     margin: 0 auto 40px auto;
     transform: skewX(-15deg);
   }
+
+
+
+  
+  /* Existing styles remain unchanged … */
+
+/* New Merch Message styling */
+.merch-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: -60px;
+margin-bottom: 40px;
+font-weight: bold;
+
+}

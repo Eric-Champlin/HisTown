@@ -8,14 +8,13 @@ import NextSteps from "../Hooks/useInViewNextSteps.tsx";
 const OurTeamDance = () => {
   // Example array of 8 teachers (adjust images/links as needed):
   const danceTeachers = [
-    { label: "KAITLIN", link: "/about/our-team/dance/teacherA", image: "https://i.imgur.com/6TdHCr8.png" },
-    { label: "MATTIE", link: "/about/our-team/dance/teacherB", image: "https://i.imgur.com/Gr1a0nY.png" },
-    { label: "GRACIE", link: "/about/our-team/dance/teacherC", image: "https://i.imgur.com/jgZT5fx.png" },
-    { label: "AIMEE", link: "/about/our-team/dance/teacherD", image: "https://i.imgur.com/5Q2EHcH.png" },
-    { label: "LAUREN", link: "/about/our-team/dance/teacherE", image: "https://i.imgur.com/Dyg1O6N.png" },
-    { label: "ALLISON", link: "/about/our-team/dance/teacherF", image: "https://i.imgur.com/4pPCfQG.png" },
-    { label: "HEATHER", link: "/about/our-team/dance/teacherG", image: "https://i.imgur.com/lYRyk4A.png" },
-    { label: "ANNA", link: "/about/our-team/dance/teacherH", image: "https://i.imgur.com/hDOxG92.png" },
+    { label: "KAITLIN", link: "/about/our-team/dance/kaitlin", image: "https://i.imgur.com/6TdHCr8.png" },
+    { label: "MATTIE", link: "/about/our-team/dance/mattie", image: "https://i.imgur.com/Gr1a0nY.png" },
+    { label: "AIMEE", link: "/about/our-team/dance/aimee", image: "https://i.imgur.com/5w2jLuA.png" },
+    { label: "ALLISON", link: "/about/our-team/dance/allison", image: "https://i.imgur.com/4pPCfQG.png" },
+    { label: "LAUREN", link: "/about/our-team/dance/lauren", image: "https://i.imgur.com/Dyg1O6N.png" },
+    { label: "DELIA", link: "/about/our-team/dance/delia", image: "https://i.imgur.com/i5Ibqc9.png" },
+
   ];
 
   return (
@@ -51,6 +50,12 @@ const OurTeamDance = () => {
           </div>
         ))}
       </div>
+
+
+        <Link to="/about/our-team" className="all-dances-button-link">
+          <button className="all-dances-button">OUR TEAM</button>
+        </Link>
+ 
 
       <NextSteps />
       <Footer />

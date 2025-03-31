@@ -1,8 +1,31 @@
-.underline-photos-videos {
-    width: 220px;
-    height: 6px;
-    background-color: #408eb2;
-    border-radius: 3px;
-    margin: 0 auto 40px auto;
-    transform: skewX(-15deg);
-  }
+.underline-videos {
+  width: 300px;
+  height: 6px;
+  background-color: #408eb2;
+  border-radius: 3px;
+  margin: 0 auto 40px auto;
+  transform: skewX(-15deg);
+}
+
+.video-container {
+  width: 550px;         /* Increased container width */
+  margin: 0 auto 50px;   /* Center container with 50px bottom margin */
+  padding: 0;
+}
+
+.video-container iframe {
+  width: 100%;          /* Fills the container's width */
+  height: 310px;        /* 550px * (9/16) ≈ 310px for a 16:9 ratio */
+  display: block;
+}
+
+.text-container-photos p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+  max-width: 600px;  /* Limit the width of the paragraph */
+  margin: 0 auto;    /* Center the paragraph horizontally */
+  text-align: center; /* Center the text inside the paragraph */
+  margin-bottom: 50px;
+  margin-top: -20px;
+}

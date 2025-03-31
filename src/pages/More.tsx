@@ -29,14 +29,14 @@ const Classes = () => {
 
         {/* 1. Dance */}
         <div className="classes-picture">
-          <Link to="" className="classes-card-link">
+          <Link to="/more/birthday-parties" className="classes-card-link">
             <div className="classes-card piano-card">
               <img
                 src="https://i.imgur.com/wf93bWZ.jpeg"
                 alt="Dance Placeholder"
               />
             </div>
-            <p className="classes-label">Birthday Parties</p>
+            <p className="classes-label">BIRTHDAY PARTIES</p>
           </Link>
         </div>
 
@@ -45,11 +45,11 @@ const Classes = () => {
           <Link to="/more/studio-rental" className="classes-card-link">
             <div className="classes-card violin-card">
               <img
-                src="https://i.imgur.com/BjWtbmd.jpeg"
+                src="https://i.imgur.com/2Zbu5kk.jpeg"
                 alt="Music Placeholder"
               />
             </div>
-            <p className="classes-label">Studio Rental</p>
+            <p className="classes-label">STUDIO RENTAL</p>
           </Link>
         </div>
 
@@ -62,7 +62,7 @@ const Classes = () => {
         alt="Vocal Placeholder"
       />
     </div>
-    <p className="classes-label">Contact</p>
+    <p className="classes-label">CONTACT</p>
   </Link>
 </div>
 

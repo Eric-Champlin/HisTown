@@ -6,3 +6,19 @@
     margin: 0 auto 40px auto;
     transform: skewX(-15deg);
   }
+
+
+  .owners-image-container {
+    text-align: center;   /* center content */
+    margin-bottom: 30px;  /* space below the image */
+    /* remove max-width if you don't want the container to restrict image size */
+  }
+  
+  .owners-image2 {
+    width: 600px !important;
+    max-width: none !important;
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  

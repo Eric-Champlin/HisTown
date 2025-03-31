@@ -31,6 +31,12 @@ import MusicalTheater from "./pages/MusicalTheater.tsx";
 import OurStory from "./pages/OurStory.tsx";
 import OurTeam from "./pages/OurTeam.tsx";
 import OurTeamDance from "./pages/OurTeamDance.tsx";
+import OurTeamKaitlin from "./pages/OurTeamKaitlin.tsx";
+import OurTeamMattie from "./pages/OurTeamMattie.tsx";
+import OurTeamAimee from "./pages/OurTeamAimee.tsx";
+import OurTeamAllison from "./pages/OurTeamAllison.tsx";
+import OurTeamLauren from "./pages/OurTeamLauren.tsx";
+import OurTeamDelia from "./pages/OurTeamDelia.tsx";
 import OurTeamMusic from "./pages/OurTeamMusic.tsx";
 import OurTeamOwners from "./pages/OurTeamOwners.tsx";
 import Photos from "./pages/Photos.tsx";
@@ -85,6 +91,14 @@ const App = () => {
           <Route path="/about/our-team" element={<OurTeam />} />
           <Route path="/about/our-team/owners" element={<OurTeamOwners />} />
           <Route path="/about/our-team/dance" element={<OurTeamDance />} />
+
+          <Route path="/about/our-team/dance/kaitlin" element={<OurTeamKaitlin />} />
+          <Route path="/about/our-team/dance/mattie" element={<OurTeamMattie />} />
+          <Route path="/about/our-team/dance/aimee" element={<OurTeamAimee />} />
+          <Route path="/about/our-team/dance/allison" element={<OurTeamAllison />} />
+          <Route path="/about/our-team/dance/lauren" element={<OurTeamLauren />} />
+          <Route path="/about/our-team/dance/delia" element={<OurTeamDelia />} />
+
           <Route path="/about/our-team/music" element={<OurTeamMusic />} />
           <Route path="/about/photos-videos" element={<Photos />} />
           <Route path="/classes/piano-lessons" element={<Piano />} />

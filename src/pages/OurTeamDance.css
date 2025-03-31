@@ -49,12 +49,13 @@
   /* 4. Grid of 8 Cards (4 Columns x 2 Rows) */
   .dance-teachers-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(3, 1fr); /* 4 columns */
     gap: 30px;
     max-width: 1400px;
     margin: 0 auto 60px auto;
     padding: 0 40px;
     box-sizing: border-box;
+    margin-bottom: 40px;
   }
   
   /* 5. Each Card + Label */
@@ -83,6 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   .dance-teachers-card:hover {
@@ -94,6 +96,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* Shift the visible portion of the image downward */
+    object-position: 50% 30%;  /* Adjust the second value (30%) until it looks right */
     border-radius: 15px;
   }
   

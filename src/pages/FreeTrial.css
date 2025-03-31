@@ -6,3 +6,24 @@
     margin: 0 auto 40px auto;
     transform: skewX(-15deg);
   }
+
+  .free-trial-description1{
+    font-size: 16px;
+    color: #000000;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    padding: 0 20px;
+    white-space: pre-line;
+  }
+
+  .free-trial-description2{
+    font-size: 16px;
+    color: #000000;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    padding: 0 20px;
+    white-space: pre-line;
+    margin-bottom: 70px;
+  }

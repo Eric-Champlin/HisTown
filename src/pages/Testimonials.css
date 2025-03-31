@@ -6,3 +6,14 @@
     margin: 0 auto 40px auto;
     transform: skewX(-15deg);
   }
+
+  .testimonials-section2{
+
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+      padding-bottom: 90px;
+      margin-top: 0px;
+    
+  }

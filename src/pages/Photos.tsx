@@ -4,13 +4,12 @@ import NavBar from "../components/NavBar.tsx";
 import Footer from "../components/Footer.tsx";
 import NextSteps from "../Hooks/useInViewNextSteps.tsx";
 
-
 const Acro = () => {
   return (
     <div>
       <NavBar />
-            {/* Banner Section */}
-            <div className="classes-banner">
+      {/* Banner Section */}
+      <div className="classes-banner">
         <img
           src="https://i.imgur.com/poLiUHv.png"
           alt="Classes Banner"
@@ -18,11 +17,31 @@ const Acro = () => {
         />
       </div>
       <div style={{ textAlign: "center" }}>
-  <h1 className="dance-classes-title">Photos/Videos</h1>
-  <div className="underline-photos-videos"></div>
-</div>
-<NextSteps />
+        <h1 className="dance-classes-title">K-LOVE FAN AWARDS</h1>
+        <div className="underline-videos"></div>
+        {/* Video Embed */}
+        <div className="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Gu_9v9EdvzM"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
 
+     
+        <div className="text-container-photos">
+
+        <p>
+        Our dancers took center stage and delivered a show-stopping performance for MercyMe at the K-LOVE Fan Awards! It was an electrifying night where passion, creativity, and pure movement lit up the stage, turning MercyMe's performance into an unforgettable celebration of music and dance.        
+          </p>
+          </div>
+
+      <NextSteps />
       <Footer />
     </div>
   );

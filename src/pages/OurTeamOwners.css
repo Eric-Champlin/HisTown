@@ -26,10 +26,9 @@
     padding: 0 20px;   /* Some horizontal padding for smaller screens */
     box-sizing: border-box;
     text-align: left;  /* Paragraphs left-aligned by default */
-    font-family: Arial, sans-serif;
   }
 
-  .dance-classes-title {
+  .dance-classes-title-owners {
     font-size: 3rem;      /* Large, bold font size */
     font-weight: 900;     /* Extra-bold weight */
     color: #333;          /* Dark text color */

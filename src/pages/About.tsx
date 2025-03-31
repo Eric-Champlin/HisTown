@@ -35,7 +35,7 @@ const About = () => {
                 alt="Acting Placeholder"
               />
             </div>
-            <p className="classes-label">Our Team</p>
+            <p className="classes-label">OUR TEAM</p>
           </Link>
         </div>
 
@@ -44,11 +44,11 @@ const About = () => {
           <Link to="/about/our-story" className="classes-card-link">
             <div className="classes-card">
               <img
-                src="https://i.imgur.com/lanA5dp.jpeg"
+                src="https://i.imgur.com/F5DIRFu.jpeg"
                 alt="Adult Placeholder"
               />
             </div>
-            <p className="classes-label">Our Story</p>
+            <p className="classes-label">OUR STORY</p>
           </Link>
         </div>
 
@@ -61,7 +61,7 @@ const About = () => {
                 alt="Company Placeholder"
               />
             </div>
-            <p className="classes-label">Testimonials</p>
+            <p className="classes-label">TESTIMONIALS</p>
           </Link>
         </div>
 
@@ -70,11 +70,11 @@ const About = () => {
           <Link to="/about/photos-videos" className="classes-card-link">
             <div className="classes-card">
               <img
-                src="https://i.imgur.com/38PnP0v.jpeg"
+                src="https://i.imgur.com/PgiUB7m.jpeg"
                 alt="Goddard Placeholder"
               />
             </div>
-            <p className="classes-label">Photos/Videos</p>
+            <p className="classes-label">K-LOVE FAN AWARDS</p>
           </Link>
         </div>
       </div>
