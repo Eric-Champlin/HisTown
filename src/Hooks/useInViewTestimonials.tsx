@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Testimonials = () => {
   const { ref: testimonialsRef, inView: testimonialsVisible } =
-      useInView<HTMLDivElement>({ threshold: 0.5 });
+      useInView<HTMLDivElement>({ threshold: 0.2 });
 
   const testimonials = [
     // Original testimonials
