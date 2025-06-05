@@ -137,3 +137,6 @@ dist
 
 # macOS file(s)
 .DS_Store.idea/
+
+echo ".idea/" >> .gitignore
+echo ".vscode/" >> .gitignore
