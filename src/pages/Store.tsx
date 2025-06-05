@@ -7,7 +7,7 @@ import Footer from "../components/Footer.tsx";
 // @ts-ignore
 import NextSteps from "../Hooks/useInViewNextSteps.tsx";
 
-const Classes = () => {
+const Store = () => {
   return (
     <div className="classes-page">
       <NavBar />
@@ -31,10 +31,10 @@ const Classes = () => {
         <div className="classes-picture">
           <div className="classes-card-link">
             <div className="classes-card piano-card">
-              <img
-                src="https://i.imgur.com/LLEWvWq.png"
-                alt="Hats Placeholder"
-              />
+                <img
+                    src="https://i.imgur.com/LLEWvWq.png"
+                    alt="Hats collection"
+                />
             </div>
             <p className="classes-label">HATS</p>
           </div>
@@ -44,10 +44,10 @@ const Classes = () => {
         <div className="classes-picture">
           <div className="classes-card-link">
             <div className="classes-card piano-card">
-              <img
-                src="https://i.imgur.com/1aOIe3s.png"
-                alt="Shirts Placeholder"
-              />
+                <img
+                    src="https://i.imgur.com/1aOIe3s.png"
+                    alt="Shirts collection"
+                />
             </div>
             <p className="classes-label">SHIRTS</p>
           </div>
@@ -57,10 +57,10 @@ const Classes = () => {
         <div className="classes-picture">
           <div className="classes-card-link">
             <div className="classes-card piano-card">
-              <img
-                src="https://i.imgur.com/qVYiIsG.png"
-                alt="Pants Placeholder"
-              />
+                <img
+                    src="https://i.imgur.com/qVYiIsG.png"
+                    alt="Pants collection"
+                />
             </div>
             <p className="classes-label">PANTS</p>
           </div>
@@ -79,4 +79,4 @@ const Classes = () => {
   );
 };
 
-export default Classes;
+export default Store;

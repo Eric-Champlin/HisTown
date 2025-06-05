@@ -7,7 +7,7 @@ import NextSteps from "../Hooks/useInViewNextSteps.tsx";
 // @ts-ignore
 import Testimonials from "../Hooks/useInViewTestimonials.tsx";
 
-const Acro = () => {
+const TestimonialsPage = () => {
     return (
         <div>
             <Testimonials />
@@ -17,4 +17,4 @@ const Acro = () => {
     );
 };
 
-export default Acro;
+export default TestimonialsPage;

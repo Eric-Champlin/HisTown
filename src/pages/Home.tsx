@@ -44,19 +44,19 @@ const Home = () => {
           <div>
               <img
                   src="https://i.imgur.com/poLiUHv.png"
-                  alt="Dance studio performance"  // Changed from Placeholder Image 1
+                  alt="Dance studio performance"
               />
           </div>
           <div>
               <img
                   src="https://i.imgur.com/poLiUHv.png"
-                  alt="Dance recital showcase"    // Changed from Placeholder Image 2
+                  alt="Dance recital showcase"
               />
           </div>
           <div>
               <img
                   src="https://i.imgur.com/poLiUHv.png"
-                  alt="Student dance performance" // Changed from Placeholder Image 3
+                  alt="Student dance performance"
               />
           </div>
       </Carousel>
