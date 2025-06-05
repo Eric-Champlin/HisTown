@@ -1,19 +1,98 @@
-.underline-testimonials {
-    width: 200px;
-    height: 6px;
-    background-color: #408eb2;
-    border-radius: 3px;
-    margin: 0 auto 40px auto;
-    transform: skewX(-15deg);
-  }
+.testimonials-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    overflow: visible;
+}
 
-  .testimonials-section2{
 
-      max-width: 1200px;
-      margin: 60px auto;
-      padding: 0 20px;
-      text-align: center;
-      padding-bottom: 90px;
-      margin-top: 0px;
-    
-  }
+.testimonial-carousel .control-arrow {
+    background: rgba(0, 0, 0, 0.3) !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 50% !important;
+    transform: translateY(-50%);
+    z-index: 2; /* Added to ensure arrows stay on top */
+}
+
+.testimonial-carousel .control-prev.control-arrow {
+    left: 0;  /* Changed from -35px */
+}
+
+.testimonial-carousel .control-next.control-arrow {
+    right: 0; /* Changed from -35px */
+}
+
+.testimonial-carousel .control-dots {
+    bottom: -40px;
+}
+
+.testimonial-carousel .control-dots .dot {
+    width: 12px;
+    height: 12px;
+}
+
+.testimonials-cards {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: stretch; /* Added to ensure equal heights in row */
+    min-height: fit-content; /* Added to allow dynamic height */
+}
+
+.testimonial-card {
+    flex: 1;
+    max-width: calc(33.33% - 1.33rem);
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    position: relative;
+}
+
+.testimonial-author {
+    margin: 0;
+    position: absolute;
+    top: 1.1rem;
+}
+
+.testimonial-stars {
+    margin: 0;
+    position: absolute;
+    top: 2.8rem;
+    color: #ffd700;
+}
+
+.testimonial-text {
+    flex-grow: 1;
+    margin-top: 3rem; /* Reduced from 5rem to 4rem to make the gap smaller */
+    overflow-y: auto;
+    padding-right: 10px;
+    line-height: 1.6;
+    scrollbar-width: thin;
+    scrollbar-color: #ddd transparent;
+}
+
+
+
+
+.testimonial-text::-webkit-scrollbar,
+.testimonial-text::-webkit-scrollbar-track,
+.testimonial-text::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .testimonial-card {
+        max-width: calc(50% - 1rem);
+    }
+}
