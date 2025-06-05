@@ -22,12 +22,15 @@ const Home = () => {
            Banner Carousel
       ===================================== */}
       <Carousel
-        showArrows={true}
-        autoPlay={true}
-        infiniteLoop={true}
-        showThumbs={false}
-        showStatus={false}
-        className="homepage-banner"
+        {...({
+          showArrows: true,
+          autoPlay: true,
+          infiniteLoop: true,
+          showThumbs: false,
+          showStatus: false,
+          className: "homepage-banner",
+          interval: 3000,
+        } as any)}
       >
         <div>
           <img

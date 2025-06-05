@@ -43,6 +43,7 @@ import Photos from "./pages/Photos.tsx";
 import Piano from "./pages/Piano.tsx";
 import Rental from "./pages/Rental.tsx";
 import Schedule from "./pages/Schedule.tsx";
+import ScrollToTop from "./ScrollToTop/ScrollToTop.tsx";
 import Store from "./pages/Store.tsx";
 import Tap from "./pages/Tap.tsx";
 import Testimonials from "./pages/Testimonials.tsx";
@@ -53,6 +54,7 @@ import Vocals from "./pages/Vocals.tsx";
 const App = () => {
   return (
     <BrowserRouter>
+          <ScrollToTop />
       <div>
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
