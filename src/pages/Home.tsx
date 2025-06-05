@@ -41,24 +41,24 @@ const Home = () => {
           interval: 3000,
         } as any)}
       >
-        <div>
-          <img
-            src="https://i.imgur.com/poLiUHv.png"
-            alt="Placeholder Image 1"
-          />
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/poLiUHv.png"
-            alt="Placeholder Image 2"
-          />
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/poLiUHv.png"
-            alt="Placeholder Image 3"
-          />
-        </div>
+          <div>
+              <img
+                  src="https://i.imgur.com/poLiUHv.png"
+                  alt="Dance studio performance"  // Changed from Placeholder Image 1
+              />
+          </div>
+          <div>
+              <img
+                  src="https://i.imgur.com/poLiUHv.png"
+                  alt="Dance recital showcase"    // Changed from Placeholder Image 2
+              />
+          </div>
+          <div>
+              <img
+                  src="https://i.imgur.com/poLiUHv.png"
+                  alt="Student dance performance" // Changed from Placeholder Image 3
+              />
+          </div>
       </Carousel>
 
       {/* =====================================
