@@ -48,10 +48,10 @@ const Dance = () => {
           <div key={index} className="dance-classes-item">
             <Link to={dance.link} className="dance-classes-card-link">
               <div className="dance-classes-card">
-                <img
-                  src={dance.image || `https://via.placeholder.com/400x250.png?text=${encodeURIComponent(dance.label)}`}
-                  alt={`${dance.label} Placeholder`}
-                />
+                  <img
+                      src={dance.image || `https://via.placeholder.com/400x250.png?text=${encodeURIComponent(dance.label)}`}
+                      alt={`${dance.label} Dance Class`} // Changed from "${dance.label} Placeholder"
+                  />
               </div>
               <p className="dance-classes-label">{dance.label}</p>
             </Link>

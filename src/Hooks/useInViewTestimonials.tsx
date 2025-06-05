@@ -4,6 +4,8 @@ import useInView from "./useInView.tsx";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+
+
 const Testimonials = () => {
   const { ref: testimonialsRef, inView: testimonialsVisible } =
       useInView<HTMLDivElement>({ threshold: 0.2 });
