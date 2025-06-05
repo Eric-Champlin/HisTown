@@ -1,4 +1,39 @@
 /* =====================================
+   White Bar (Side Side) Fix
+===================================== */
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Update all full-width elements */
+.homepage-banner,
+.carousel img,
+.dance-classes-banner,
+.dance-classes-banner-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.music-lessons,
+.band-program,
+.other-lessons,
+.why-us,
+.next-steps,
+.meet-team {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+/* =====================================
    Global / Base Styles
 ===================================== */
 .homepage-banner {
@@ -19,6 +54,9 @@
   height: 35vh;
   object-fit: cover;
 }
+
+
+
 
 /* =====================================
      OUR MISSION Section
@@ -956,138 +994,491 @@
   }
 }
 
-/* ------------------ For screens up to 820px (Mobile) ------------------ */
-@media (max-width: 820px) {
-  .our-mission {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 0;
-    padding-bottom: 100px;
+/* Tablet Media Query (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Banner adjustments */
+  .homepage-banner {
+    height: 30vh;
   }
 
-  .our-mission h1::after {
-    left: 50%;
+  .carousel img {
+    height: 30vh;
+  }
+
+  /* Our Mission Section */
+  .our-mission {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    gap: 30px;
   }
 
   .text-container {
-    text-align: center;
-    padding: 0 20px;
-    margin-bottom: 20px;
+    padding: 0 15px;
   }
 
   .text-container h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
 
-  .image-container {
-    margin-top: 0;
-    flex: none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .text-container p {
+    font-size: 1.1rem;
+    text-align: center;
   }
 
   .image-container img {
+    max-width: 400px;
     margin-top: 20px;
-    max-width: 75%;
   }
 
-  .button-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .register-btn,
-  .trial-btn {
-    margin-right: 10px;
-    font-size: 0.9rem;
-    padding: 10px 16px;
-  }
-
-  .music-lessons {
-    margin-bottom: 0;
-  }
-
-  .band-program {
-    margin-top: 0;
-  }
-
-  .other-lessons::before {
-    margin-top: -190px;
-  }
-
-  .music-lessons,
-  .band-program,
-  .other-lessons {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 5%;
-    position: relative;
-    justify-content: center;
-  }
-
+  /* Music/Band/Other Lessons Sections */
   .music-lessons-inner,
   .band-program-inner,
   .other-lessons-inner {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 90%;
-    transform: none;
-    justify-content: space-between;
-  }
-
-  .music-image-container,
-  .music-text-container,
-  .band-image-container,
-  .band-text-container,
-  .other-image-container,
-  .other-text-container {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .band-program-inner {
-    display: flex;
     flex-direction: column;
+    padding: 20px;
+    gap: 40px;
   }
 
-  .band-text-container {
-    order: 1;
+  .music-text-container,
+  .band-text-container,
+  .other-text-container {
+    text-align: center;
   }
 
-  .band-image-container {
-    order: 2;
+  .music-text-container h1,
+  .band-text-container h1,
+  .other-text-container h1 {
+    font-size: 2.3rem;
   }
 
-  .class-box {
-    margin: 0 auto;
-    text-align: left;
+  .music-text-container p,
+  .band-text-container p,
+  .other-text-container p {
+    font-size: 1.1rem;
+    margin: 20px auto;
+    max-width: 100%;
   }
 
   .music-image-container img,
   .band-image-container img,
   .other-image-container img {
-    margin-bottom: -40px;
+    max-width: 400px;
+    margin: 20px auto;
   }
 
-  .next-steps::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: 0;
-    width: 100%;
-    height: 120%;
-    background: #f5f5f5;
-    transform: skewY(3deg);
-    transform-origin: top left;
-    z-index: -1;
+  /* Class Box adjustments */
+  .class-box {
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
   }
+
+  /* Why Us Section */
+  .why-us-content {
+    padding: 0 20px;
+  }
+
+  .why-us-heading {
+    font-size: 2.5rem;
+  }
+
+  .why-us-values {
+    gap: 25px;
+  }
+
+  .why-us-value-card {
+    min-width: 240px;
+    padding: 15px;
+  }
+
+  .why-us-value-title {
+    font-size: 1.2rem;
+  }
+
+  /* Meet Team Section */
+  .meet-team-heading {
+    font-size: 2.5rem;
+  }
+
+  .team-items {
+    gap: 25px;
+    padding: 0 20px;
+  }
+
+  .team-card {
+    width: 280px;
+    height: 260px;
+  }
+
+  .team-label {
+    font-size: 1.5rem;
+  }
+
+  /* Next Steps Section */
+  .next-steps-content {
+    padding: 0 20px;
+  }
+
+  .next-steps-heading {
+    font-size: 2.5rem;
+  }
+
+  .next-steps-boxes {
+    gap: 25px;
+  }
+
+  .next-step-box {
+    min-width: 240px;
+    padding: 15px;
+  }
+
+  .step-title {
+    font-size: 1.5rem;
+  }
+
+  /* Button adjustments */
+  .register-btn,
+  .trial-btn,
+  .learn-more {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  /* Skewed section adjustments */
+  .music-lessons::before,
+  .band-program::before,
+  .other-lessons::before,
+  .why-us::before,
+  .next-steps::before,
+  .meet-team::before {
+    transform: skewY(2deg);
+    top: -30px;
+  }
+
+  /* General spacing adjustments */
+  .music-lessons,
+  .band-program,
+  .other-lessons {
+    margin: 40px 0;
+    padding-bottom: 60px;
+  }
+
+  /* Title underline adjustments */
+  .our-mission h1::after,
+  .music-text-container h1::after,
+  .band-text-container h1::after,
+  .other-text-container h1::after {
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%) skewX(-15deg);
+  }
+}
+
+
+/* Mobile Large Media Query (max-width: 425px) */
+@media (max-width: 425px) {
+  /* Banner adjustments */
+  .homepage-banner {
+    height: 25vh;
+  }
+
+  .carousel img {
+    height: 25vh;
+  }
+
+  /* Our Mission Section */
+  .our-mission {
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px auto;
+    gap: 20px;
+  }
+
+  .text-container {
+    padding: 0 10px;
+  }
+
+  .text-container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .image-container img {
+    max-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Music/Band/Other Lessons Sections */
+  .music-lessons-inner,
+  .band-program-inner,
+  .other-lessons-inner {
+    padding: 5px;
+    gap: 5px;
+    width: 95%; /* Reduce side margins */
+  }
+
+
+
+  .music-text-container h1,
+  .band-text-container h1,
+  .other-text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .music-text-container p,
+  .band-text-container p,
+  .other-text-container p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 15px auto;
+  }
+
+  .music-image-container img,
+  .band-image-container img,
+  .other-image-container img {
+    display: none;
+
+  }
+
+  /* Class Box adjustments */
+  .class-box {
+    padding: 15px;
+    margin: 15px 10px;
+  }
+
+  .class-box h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Why Us Section */
+  .why-us {
+    padding-bottom: 60px;
+  }
+
+  .why-us-content {
+    padding: 0 15px;
+  }
+
+  .why-us-heading {
+    font-size: 2rem;
+  }
+
+  .why-us-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .why-us-values {
+    gap: 20px;
+  }
+
+  .why-us-value-card {
+    min-width: 100%;
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  .why-us-value-title {
+    font-size: 1.1rem;
+  }
+
+  .why-us-value-text {
+    font-size: 0.95rem;
+  }
+
+  /* Meet Team Section */
+  .meet-team {
+    padding-bottom: 60px;
+  }
+
+  .meet-team-heading {
+    font-size: 2rem;
+  }
+
+  .team-items {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .team-card {
+    width: 100%;
+    height: 250px;
+  }
+
+  .team-label {
+    font-size: 1.3rem;
+    margin-top: 8px;
+  }
+
+  /* Next Steps Section */
+  .next-steps {
+    padding-bottom: 60px;
+  }
+
+  .next-steps-content {
+    padding: 0 15px;
+  }
+
+  .next-steps-heading {
+    font-size: 2rem;
+  }
+
+  .next-steps-text {
+    font-size: 1rem;
+  }
+
+  .next-steps-boxes {
+    gap: 20px;
+  }
+
+  .next-step-box {
+    width: 100%;
+    min-width: unset;
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  .step-title {
+    font-size: 1.3rem;
+  }
+
+  .step-description {
+    font-size: 0.95rem;
+  }
+
+  /* Button adjustments */
+  .register-btn,
+  .trial-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+
+  .learn-more {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Skewed section adjustments */
+  .music-lessons::before,
+  .band-program::before,
+  .other-lessons::before,
+  .why-us::before,
+  .next-steps::before,
+  .meet-team::before {
+    transform: skewY(1deg);
+    top: -10px;
+  }
+
+  /* Title underline adjustments */
+  .our-mission h1::after,
+  .music-text-container h1::after,
+  .band-text-container h1::after,
+  .other-text-container h1::after {
+    width: 140px;
+    height: 4px;
+    bottom: -10px;
+  }
+
+  /* General spacing and container adjustments */
+  .music-lessons,
+  .band-program,
+  .other-lessons {
+    margin: 30px 0;
+    padding-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row; /* Change from column to row */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .register-btn,
+  .trial-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    width: auto; /* Remove fixed width */
+    margin: 0; /* Remove margins */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  /* Remove any previously set button width */
+  .button-container button {
+    width: auto;
+    margin: 0;
+  }
+
+
+  /* Fix any potential overflow issues */
+  .homepage {
+    overflow-x: hidden;
+  }
+
+  .band-program-inner {
+    display: flex;
+    flex-direction: column !important; /* Force column direction */
+  }
+
+  .band-text-container {
+    order: 0; /* Move text container to top */
+  }
+
+  .band-image-container {
+    order: 1; /* Move image container to bottom */
+  }
+
+  /* Featured section - put text on top */
+  .other-lessons-inner {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .other-text-container {
+    order: 0;
+  }
+
+  .other-image-container {
+    order: 1;
+  }
+
+  /* Reduce spacing above sections */
+  .music-lessons::before,
+  .band-program::before,
+  .other-lessons::before {
+    top: -10px;
+  }
+
+  /* Hide images as requested in previous change */
+  .music-image-container,
+  .band-image-container,
+  .other-image-container {
+    display: none;
+  }
+
+  .music-text-container,
+  .band-text-container
+  {
+    padding: 5px;
+    margin-bottom: -60px;
+  }
+
+
+
 }

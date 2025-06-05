@@ -1,0 +1,5 @@
+{
+  "typescript.tsconfig.ignoreFiles": [
+    "node_modules/**/tsconfig.json"
+  ]
+}
