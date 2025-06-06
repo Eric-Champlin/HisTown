@@ -16,6 +16,7 @@ const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // @ts-ignore
   return (
     <nav className="navbar">
       {/* Desktop Logo */}

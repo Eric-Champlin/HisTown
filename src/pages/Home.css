@@ -22,8 +22,8 @@ body {
 }
 
 
-.music-lessons,
-.band-program,
+.music-classes,
+.band-classes,
 .other-lessons,
 .why-us,
 .next-steps,
@@ -148,8 +148,17 @@ body {
      DANCE/MUSIC/FEATURED Section
   ===================================== */
 
-.music-lessons,
-.band-program {
+.music-classes {
+  position: relative;
+  overflow: visible;
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.band-classes {
   position: relative;
   overflow: visible;
   background-color: transparent;
@@ -166,8 +175,8 @@ body {
   text-align: center;
 }
 
-.music-lessons::before,
-.band-program::before,
+.music-classes::before,
+.band-classes::before,
 .other-lessons::before {
   content: "";
   position: absolute;
@@ -196,8 +205,9 @@ body {
 .other-image-container {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+
 }
 
 .music-image-container img,
@@ -284,13 +294,12 @@ body {
 }
 
 .class-box {
-  background-color: #fff;
-  padding: 17px 0 47px 40px;
+  background-color: white;
+  padding: 20px 60px 40px 60px;; /* Increased right padding from what it was before */
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  max-width: 460px;
-  margin-left: 0; /* If you want to push the box away from the image, optional */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .class-box h1 {
@@ -834,8 +843,8 @@ body {
 /* ------------------ For screens up to 1430px ------------------ */
 
 @media (max-width: 1430px) {
-  .music-lessons,
-  .band-program,
+  .music-classes,
+  .band-classes,
   .other-lessons {
     padding: 30px 10%;
     margin: 30px auto;
@@ -848,8 +857,8 @@ body {
     padding: 30px;
     margin: 30px auto;
   }
-  .music-lessons,
-  .band-program,
+  .music-classes,
+  .band-classes,
   .other-lessons {
     padding: 20px 5%;
     margin: 20px auto;
@@ -863,8 +872,8 @@ body {
     margin: 30px auto;
   }
 
-  .music-lessons,
-  .band-program,
+  .music-classes,
+  .band-classes,
   .other-lessons {
     padding: 20px 0%;
     margin: 20px auto;
@@ -923,11 +932,11 @@ body {
     padding: 10px 16px;
   }
 
-  .music-lessons {
+  .music-classes {
     margin-bottom: 0;
   }
 
-  .band-program {
+  .band-classes {
     margin-top: 0;
   }
 
@@ -935,8 +944,8 @@ body {
     margin-top: -190px;
   }
 
-  .music-lessons,
-  .band-program,
+  .music-classes,
+  .band-classes,
   .other-lessons {
     flex-direction: column;
     align-items: center;
@@ -1148,8 +1157,8 @@ body {
   }
 
   /* Skewed section adjustments */
-  .music-lessons::before,
-  .band-program::before,
+  .music-classes::before,
+  .band-classes::before,
   .other-lessons::before,
   .why-us::before,
   .next-steps::before,
@@ -1159,8 +1168,8 @@ body {
   }
 
   /* General spacing adjustments */
-  .music-lessons,
-  .band-program,
+  .music-classes,
+  .band-classes,
   .other-lessons {
     margin: 40px 0;
     padding-bottom: 60px;
@@ -1178,8 +1187,33 @@ body {
 }
 
 
-/* Mobile Large Media Query (max-width: 425px) */
-@media (max-width: 425px) {
+/* --------------------------------------------
+ Mobile Large Media Query (max-width: 425px)
+  ------------------------------------------------------------
+  */
+@media screen and (max-width: 425px)
+ {
+
+
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+
+
   /* Banner adjustments */
   .homepage-banner {
     height: 25vh;
@@ -1218,48 +1252,7 @@ body {
     margin-bottom: 20px;
   }
 
-  /* Music/Band/Other Lessons Sections */
-  .music-lessons-inner,
-  .band-program-inner,
-  .other-lessons-inner {
-    padding: 5px;
-    gap: 5px;
-    width: 95%; /* Reduce side margins */
-  }
 
-
-
-  .music-text-container h1,
-  .band-text-container h1,
-  .other-text-container h1 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
-
-  .music-text-container p,
-  .band-text-container p,
-  .other-text-container p {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin: 15px auto;
-  }
-
-  .music-image-container img,
-  .band-image-container img,
-  .other-image-container img {
-    display: none;
-
-  }
-
-  /* Class Box adjustments */
-  .class-box {
-    padding: 15px;
-    margin: 15px 10px;
-  }
-
-  .class-box h1 {
-    font-size: 1.8rem;
-  }
 
   /* Why Us Section */
   .why-us {
@@ -1373,34 +1366,16 @@ body {
     display: block;
   }
 
-  /* Skewed section adjustments */
-  .music-lessons::before,
-  .band-program::before,
-  .other-lessons::before,
-  .why-us::before,
-  .next-steps::before,
-  .meet-team::before {
-    transform: skewY(1deg);
-    top: -10px;
-  }
 
-  /* Title underline adjustments */
-  .our-mission h1::after,
-  .music-text-container h1::after,
-  .band-text-container h1::after,
-  .other-text-container h1::after {
-    width: 140px;
-    height: 4px;
-    bottom: -10px;
-  }
+
+
+
+
 
   /* General spacing and container adjustments */
-  .music-lessons,
-  .band-program,
-  .other-lessons {
-    margin: 30px 0;
-    padding-bottom: 20px;
-  }
+
+
+
 
   .button-container {
     display: flex;
@@ -1459,8 +1434,8 @@ body {
   }
 
   /* Reduce spacing above sections */
-  .music-lessons::before,
-  .band-program::before,
+  .music-classes::before,
+  .band-classes::before,
   .other-lessons::before {
     top: -10px;
   }
@@ -1476,11 +1451,59 @@ body {
   .band-text-container
   {
     padding: 5px;
-    margin-bottom: -60px;
+    margin-bottom: -120px;
   }
 
+  /* Music/Band/Other Lessons Sections */
+  .music-lessons-inner,
+  .band-program-inner,
+  .other-lessons-inner {
+    padding: 5px;
+    gap: 5px;
+    width: 95%; /* Reduce side margins */
+  }
 
+  .music-text-container h1,
+  .band-text-container h1,
+  .other-text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
 
+  .music-text-container p,
+  .band-text-container p,
+  .other-text-container p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 15px auto;
+  }
+
+  .music-image-container img,
+  .band-image-container img,
+  .other-image-container img {
+    display: none;
+
+  }
+
+  /* Class Box adjustments */
+  .class-box {
+    padding: 15px;
+    margin: 15px 10px;
+  }
+
+  .class-box h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Title underline adjustments */
+  .our-mission h1::after,
+  .music-text-container h1::after,
+  .band-text-container h1::after,
+  .other-text-container h1::after {
+    width: 140px;
+    height: 4px;
+    bottom: -10px;
+  }
 
   }
 

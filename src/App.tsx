@@ -50,8 +50,12 @@ import Testimonials from "./pages/Testimonials.tsx";
 import Tuition from "./pages/Tuition.tsx";
 import Violin from "./pages/Violin.tsx";
 import Vocals from "./pages/Vocals.tsx";
+import "./App.css";
+
+
 
 const App = () => {
+
   return (
     <BrowserRouter>
           <ScrollToTop />

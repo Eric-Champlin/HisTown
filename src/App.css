@@ -1,3 +1,6 @@
+
+
+
 .App {
   text-align: center;
 }
@@ -34,5 +37,83 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/*Scrolling fix*/
+/* Mobile-specific fixes (425px and below) */
+@media screen and (max-width: 425px) {
+  /* Root layout control */
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Force all sections to contain their content */
+  .homepage {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    position: relative;
+  }
+
+  /* Handle skewed sections differently on mobile */
+  .music-lessons::before,
+  .band-program::before,
+  .other-lessons::before,
+  .meet-team::before,
+  .why-us::before,
+  .next-steps::before {
+    width: 150%;
+    left: -25%;
+  }
+
+  /* Mobile container adjustments */
+  .our-mission,
+  .music-lessons,
+  .band-program,
+  .other-lessons,
+  .testimonials-section,
+  .meet-team,
+  .why-us,
+  .next-steps {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Carousel containment */
+  .carousel-root {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel .slide img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Nested container fixes */
+  .text-container,
+  .image-container,
+  .music-lessons-inner,
+  .band-program-inner,
+  .other-lessons-inner {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  /* Force single-column layout */
+  .our-mission {
+    flex-direction: column;
   }
 }

@@ -8,7 +8,7 @@ const MusicClasses = () => {
   });
 
   return (
-    <section className="band-program">
+    <section className="band-classes">
       <div className="band-program-inner">
         <div
           className={`band-text-container slide-left ${bandVisible ? "show" : ""}`}

@@ -9,7 +9,7 @@ const DanceClasses = () => {
   });
 
   return (
-      <section className="music-lessons">
+      <section className="music-classes">
         <div className="music-lessons-inner" ref={danceRef}>
           <div
               className={`music-image-container slide-left ${danceVisible ? "show" : ""}`}
