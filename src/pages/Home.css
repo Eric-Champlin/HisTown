@@ -22,9 +22,9 @@ body {
 }
 
 
+.dance-classes,
 .music-classes,
-.band-classes,
-.other-lessons,
+.featured-classes,
 .why-us,
 .next-steps,
 .meet-team {
@@ -148,7 +148,7 @@ body {
      DANCE/MUSIC/FEATURED Section
   ===================================== */
 
-.music-classes {
+.dance-classes {
   position: relative;
   overflow: visible;
   background-color: transparent;
@@ -158,7 +158,7 @@ body {
   text-align: center;
 }
 
-.band-classes {
+.music-classes {
   position: relative;
   overflow: visible;
   background-color: transparent;
@@ -167,7 +167,7 @@ body {
   text-align: center;
 }
 
-.other-lessons {
+.featured-classes {
   position: relative;
   overflow: visible;
   background-color: transparent;
@@ -175,9 +175,9 @@ body {
   text-align: center;
 }
 
+.dance-classes::before,
 .music-classes::before,
-.band-classes::before,
-.other-lessons::before {
+.featured-classes::before {
   content: "";
   position: absolute;
   top: -50px; /* Slight upward offset, if desired */
@@ -189,9 +189,9 @@ body {
   z-index: -1;
 }
 
-.music-lessons-inner,
-.band-program-inner,
-.other-lessons-inner {
+.dance-lessons-inner,
+.music-program-inner,
+.featured-lessons-inner {
   max-width: 1200px; /* The content width limit */
   margin: 0 auto; /* Center horizontally */
   padding: 0 40px; /* Horizontal padding inside the container */
@@ -200,9 +200,9 @@ body {
   justify-content: space-between;
 }
 
+.dance-image-container,
 .music-image-container,
-.band-image-container,
-.other-image-container {
+.featured-image-container {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -210,25 +210,25 @@ body {
 
 }
 
+.dance-image-container img,
 .music-image-container img,
-.band-image-container img,
-.other-image-container img {
+.featured-image-container img {
   width: 100%;
   max-width: 500px;
   border-radius: 20px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.dance-text-container,
 .music-text-container,
-.band-text-container,
-.other-text-container {
+.featured-text-container {
   flex: 1;
   text-align: left;
 }
 
+.dance-text-container h1,
 .music-text-container h1,
-.band-text-container h1,
-.other-text-container h1 {
+.featured-text-container h1 {
   font-size: 2.8rem;
   font-weight: 900;
   margin-bottom: 10px;
@@ -236,8 +236,8 @@ body {
   display: inline-block;
 }
 
-.music-text-container h1::after,
-.band-text-container h1::after {
+.dance-text-container h1::after,
+.music-text-container h1::after {
   content: "";
   position: absolute;
   left: 30%;
@@ -249,7 +249,7 @@ body {
   border-radius: 3px;
 }
 
-.other-text-container h1::after {
+.featured-text-container h1::after {
   content: "";
   position: absolute;
   left: 48%;
@@ -261,18 +261,18 @@ body {
   border-radius: 3px;
 }
 
+.dance-text-container p,
 .music-text-container p,
-.band-text-container p,
-.other-text-container p {
+.featured-text-container p {
   font-size: 1.2rem;
   line-height: 1.5;
   color: #333;
   max-width: 520px;
 }
 
+.dance-text-container .learn-more,
 .music-text-container .learn-more,
-.band-text-container .learn-more,
-.other-text-container .learn-more {
+.featured-text-container .learn-more {
   display: inline-block;
   background-color: #408eb2;
   color: white;
@@ -287,9 +287,9 @@ body {
   margin-top: 10px;
 }
 
+.dance-text-container .learn-more:hover,
 .music-text-container .learn-more:hover,
-.band-text-container .learn-more:hover,
-.other-text-container .learn-more:hover {
+.featured-text-container .learn-more:hover {
   background-color: #5d9dbb;
 }
 
@@ -843,9 +843,9 @@ body {
 /* ------------------ For screens up to 1430px ------------------ */
 
 @media (max-width: 1430px) {
+  .dance-classes,
   .music-classes,
-  .band-classes,
-  .other-lessons {
+  .featured-classes {
     padding: 30px 10%;
     margin: 30px auto;
   }
@@ -857,9 +857,9 @@ body {
     padding: 30px;
     margin: 30px auto;
   }
+  .dance-classes,
   .music-classes,
-  .band-classes,
-  .other-lessons {
+  .featured-classes {
     padding: 20px 5%;
     margin: 20px auto;
   }
@@ -872,9 +872,9 @@ body {
     margin: 30px auto;
   }
 
+  .dance-classes,
   .music-classes,
-  .band-classes,
-  .other-lessons {
+  .featured-classes {
     padding: 20px 0%;
     margin: 20px auto;
   }
@@ -932,21 +932,21 @@ body {
     padding: 10px 16px;
   }
 
-  .music-classes {
+  .dance-classes {
     margin-bottom: 0;
   }
 
-  .band-classes {
+  .music-classes {
     margin-top: 0;
   }
 
-  .other-lessons::before {
+  .featured-classes::before {
     margin-top: -190px;
   }
 
+  .dance-classes,
   .music-classes,
-  .band-classes,
-  .other-lessons {
+  .featured-classes {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -955,9 +955,9 @@ body {
     justify-content: center;
   }
 
-  .music-lessons-inner,
-  .band-program-inner,
-  .other-lessons-inner {
+  .dance-lessons-inner,
+  .music-program-inner,
+  .featured-lessons-inner {
     display: flex;
     flex-direction: column-reverse;
     width: 90%;
@@ -965,12 +965,12 @@ body {
     justify-content: space-between;
   }
 
+  .dance-image-container,
+  .dance-text-container,
   .music-image-container,
   .music-text-container,
-  .band-image-container,
-  .band-text-container,
-  .other-image-container,
-  .other-text-container {
+  .featured-image-container,
+  .featured-text-container {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
@@ -978,16 +978,16 @@ body {
     align-items: center;
   }
 
-  .band-program-inner {
+  .music-program-inner {
     display: flex;
     flex-direction: column;
   }
 
-  .band-text-container {
+  .music-text-container {
     order: 1;
   }
 
-  .band-image-container {
+  .music-image-container {
     order: 2;
   }
 
@@ -996,9 +996,9 @@ body {
     text-align: left;
   }
 
+  .dance-image-container img,
   .music-image-container img,
-  .band-image-container img,
-  .other-image-container img {
+  .featured-image-container img {
     margin-bottom: -40px;
   }
 }
@@ -1042,37 +1042,37 @@ body {
   }
 
   /* Music/Band/Other Lessons Sections */
-  .music-lessons-inner,
-  .band-program-inner,
-  .other-lessons-inner {
+  .dance-lessons-inner,
+  .music-program-inner,
+  .featured-lessons-inner {
     flex-direction: column;
     padding: 20px;
     gap: 40px;
   }
 
+  .dance-text-container,
   .music-text-container,
-  .band-text-container,
-  .other-text-container {
+  .featured-text-container {
     text-align: center;
   }
 
+  .dance-text-container h1,
   .music-text-container h1,
-  .band-text-container h1,
-  .other-text-container h1 {
+  .featured-text-container h1 {
     font-size: 2.3rem;
   }
 
+  .dance-text-container p,
   .music-text-container p,
-  .band-text-container p,
-  .other-text-container p {
+  .featured-text-container p {
     font-size: 1.1rem;
     margin: 20px auto;
     max-width: 100%;
   }
 
+  .dance-image-container img,
   .music-image-container img,
-  .band-image-container img,
-  .other-image-container img {
+  .featured-image-container img {
     max-width: 400px;
     margin: 20px auto;
   }
@@ -1157,9 +1157,9 @@ body {
   }
 
   /* Skewed section adjustments */
+  .dance-classes::before,
   .music-classes::before,
-  .band-classes::before,
-  .other-lessons::before,
+  .featured-classes::before,
   .why-us::before,
   .next-steps::before,
   .meet-team::before {
@@ -1168,18 +1168,18 @@ body {
   }
 
   /* General spacing adjustments */
+  .dance-classes,
   .music-classes,
-  .band-classes,
-  .other-lessons {
+  .featured-classes {
     margin: 40px 0;
     padding-bottom: 60px;
   }
 
   /* Title underline adjustments */
   .our-mission h1::after,
+  .dance-text-container h1::after,
   .music-text-container h1::after,
-  .band-text-container h1::after,
-  .other-text-container h1::after {
+  .featured-text-container h1::after {
     width: 180px;
     left: 50%;
     transform: translateX(-50%) skewX(-15deg);
@@ -1406,81 +1406,81 @@ body {
     overflow-x: hidden;
   }
 
-  .band-program-inner {
+  .music-program-inner {
     display: flex;
     flex-direction: column !important; /* Force column direction */
   }
 
-  .band-text-container {
+  .music-text-container {
     order: 0; /* Move text container to top */
   }
 
-  .band-image-container {
+  .music-image-container {
     order: 1; /* Move image container to bottom */
   }
 
   /* Featured section - put text on top */
-  .other-lessons-inner {
+  .featured-lessons-inner {
     display: flex;
     flex-direction: column !important;
   }
 
-  .other-text-container {
+  .featured-text-container {
     order: 0;
   }
 
-  .other-image-container {
+  .featured-image-container {
     order: 1;
   }
 
   /* Reduce spacing above sections */
+  .dance-classes::before,
   .music-classes::before,
-  .band-classes::before,
-  .other-lessons::before {
+  .featured-classes::before {
     top: -10px;
   }
 
   /* Hide images as requested in previous change */
+  .dance-image-container,
   .music-image-container,
-  .band-image-container,
-  .other-image-container {
+  .featured-image-container {
     display: none;
   }
 
-  .music-text-container,
-  .band-text-container
+  .dance-text-container,
+  .music-text-container
   {
     padding: 5px;
     margin-bottom: -120px;
   }
 
   /* Music/Band/Other Lessons Sections */
-  .music-lessons-inner,
-  .band-program-inner,
-  .other-lessons-inner {
+  .dance-lessons-inner,
+  .music-program-inner,
+  .featured-lessons-inner {
     padding: 5px;
     gap: 5px;
     width: 95%; /* Reduce side margins */
   }
 
+  .dance-text-container h1,
   .music-text-container h1,
-  .band-text-container h1,
-  .other-text-container h1 {
+  .featured-text-container h1 {
     font-size: 2rem;
     margin-bottom: 25px;
   }
 
+  .dance-text-container p,
   .music-text-container p,
-  .band-text-container p,
-  .other-text-container p {
+  .featured-text-container p {
     font-size: 1rem;
     line-height: 1.4;
     margin: 15px auto;
   }
 
+  .dance-image-container img,
   .music-image-container img,
-  .band-image-container img,
-  .other-image-container img {
+  .featured-image-container img {
     display: none;
 
   }
@@ -1497,9 +1497,9 @@ body {
 
   /* Title underline adjustments */
   .our-mission h1::after,
+  .dance-text-container h1::after,
   .music-text-container h1::after,
-  .band-text-container h1::after,
-  .other-text-container h1::after {
+  .featured-text-container h1::after {
     width: 140px;
     height: 4px;
     bottom: -10px;

@@ -9,14 +9,14 @@ const DanceClasses = () => {
   });
 
   return (
-      <section className="music-classes">
-        <div className="music-lessons-inner" ref={danceRef}>
+      <section className="dance-classes">
+        <div className="dance-lessons-inner" ref={danceRef}>
           <div
-              className={`music-image-container slide-left ${danceVisible ? "show" : ""}`}
+              className={`dance-image-container slide-left ${danceVisible ? "show" : ""}`}
           >
             <img src="https://i.imgur.com/HLP9IVj.jpeg" alt="Dance Classes" />
           </div>
-          <div className="music-text-container">
+          <div className="dance-text-container">
             <div
                 className={`class-box slide-right ${danceVisible ? "show" : ""}`}
             >

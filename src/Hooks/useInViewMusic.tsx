@@ -8,10 +8,10 @@ const MusicClasses = () => {
   });
 
   return (
-    <section className="band-classes">
-      <div className="band-program-inner">
+    <section className="music-classes">
+      <div className="music-program-inner">
         <div
-          className={`band-text-container slide-left ${bandVisible ? "show" : ""}`}
+          className={`music-text-container slide-left ${bandVisible ? "show" : ""}`}
           ref={bandRef}
         >
           <div className="class-box">
@@ -26,7 +26,7 @@ const MusicClasses = () => {
           </div>
         </div>
         <div
-          className={`band-image-container slide-right ${bandVisible ? "show" : ""}`}
+          className={`music-image-container slide-right ${bandVisible ? "show" : ""}`}
         >
           <img
             src="https://i.imgur.com/P6AF87u.jpeg"

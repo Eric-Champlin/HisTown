@@ -63,8 +63,8 @@
 
   /* Handle skewed sections differently on mobile */
   .music-lessons::before,
-  .band-program::before,
-  .other-lessons::before,
+  .dance-lessons::before,
+  .featured-classes::before,
   .meet-team::before,
   .why-us::before,
   .next-steps::before {
@@ -75,8 +75,8 @@
   /* Mobile container adjustments */
   .our-mission,
   .music-lessons,
-  .band-program,
-  .other-lessons,
+  .dance-lessons,
+  .featured-classes,
   .testimonials-section,
   .meet-team,
   .why-us,
@@ -104,9 +104,9 @@
   /* Nested container fixes */
   .text-container,
   .image-container,
-  .music-lessons-inner,
-  .band-program-inner,
-  .other-lessons-inner {
+  .dance-lessons-inner,
+  .music-program-inner,
+  .featured-lessons-inner {
     width: 100%;
     padding: 10px;
     margin: 0;

@@ -8,10 +8,10 @@ const FeaturedClasses = () => {
   });
 
   return (
-    <section className="other-lessons">
-      <div className="other-lessons-inner">
+    <section className="featured-classes">
+      <div className="featured-lessons-inner">
         <div
-          className={`other-image-container slide-left ${otherVisible ? "show" : ""}`}
+          className={`featured-image-container slide-left ${otherVisible ? "show" : ""}`}
         >
           <img
             src="https://i.imgur.com/pcXgQqk.jpeg"
@@ -19,7 +19,7 @@ const FeaturedClasses = () => {
           />
         </div>
         <div
-          className={`other-text-container slide-right ${otherVisible ? "show" : ""}`}
+          className={`featured-text-container slide-right ${otherVisible ? "show" : ""}`}
           ref={otherRef}
         >
           <div className="class-box">
