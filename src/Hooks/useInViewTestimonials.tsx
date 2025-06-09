@@ -1,14 +1,24 @@
-import React from "react";
-// @ts-ignore
+import React, { useState, useEffect } from "react";
+//@ts-ignore
 import useInView from "./useInView.tsx";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-
-
 const Testimonials = () => {
   const { ref: testimonialsRef, inView: testimonialsVisible } =
       useInView<HTMLDivElement>({ threshold: 0.2 });
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 425);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 425);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
 
   const testimonials = [
     // Original testimonials
@@ -18,11 +28,11 @@ const Testimonials = () => {
     },
     {
       author: "Justine Vild",
-      text: "My daughter has been dancing at Histown for many years. There are lots of things I love about this studio, not the least of them being that it's a Christian dance studio. I love their scheduling. It's very easy for my daughter to take 6 hours of dance over 2 evenings. They align their scheduling just right. I love that the recital songs are either Christian or clean songs."
+      text: "My daughter has been dancing at Histown for many years. There are lots of things I love about this studio, not the least of them being that it's a Christian dance studio. I love their scheduling. It's very easy for my daughter to take 6 hours of dance over 2 evenings. I love that the recital songs are either Christian or clean songs."
     },
     {
       author: "Kathleen Crews",
-      text: "Histown provides the healthy dance experience I wanted for my daughter. The owners, teachers, and office manager have created a family-like atmosphere where dancers support and cheer for each other. There's the right amount of pressure for growth with the students excited to grow as a dancer; not a stressing environment whatsoever."
+      text: "Histown provides the healthy dance experience I wanted for my daughter. The owners, teachers, and office manager have created a family-like atmosphere where dancers support and cheer for each other. There's the right amount of healthy pressure for growth with the students excited to grow as a dancer."
     },
     // New testimonials
     {
@@ -71,7 +81,7 @@ const Testimonials = () => {
       text: "We have absolutely adored our time with Histown! The teachers are wonder and the owners are amazing! They are the sweetest people and communication is amazing! "},
     {
       author: "Mimi J.",
-      text: "Histown Dance--What A Wonderful Studio--The Instruction is Superb. I love the Christian atmosphere and the patience and love felt by All the teachers. All Four of My Children have been Blessed to have attended Histown Dance for many years now and have benefited So Richly from the care and skilled instruction of the teachers. "},
+      text: "Histown Dance--What A Wonderful Studio--The Instruction is Superb. I love the Christian atmosphere and the patience and love felt by All the teachers. All Four of My Children have been Blessed to have attended Histown Dance for many years now and have benefited so richly. "},
     {
       author: "DeAnne Bruinsma",
       text: "His town dance studio was a great fit for our family with flexibility and great dance instruction from beginning to advanced. The staff and teachers care about each dancer and it shows. It has been such a positive environment for my kids to try new dance styles and develop a love for dance. I highly recommend HisTown."},
@@ -98,12 +108,11 @@ const Testimonials = () => {
     {
       author: "Amanda Cooper",
       text: "Incredible teaching, family-like environment, and amazing Christian community! Cannot say enough about how thankful I am to have danced here throughout middle and high school. Histown really is a family of believers worshiping Jesus through dance!"},
-    {
-      author: "Don Mencke",
-      text: "Can't say enough good things about this studio! High quality instruction, Christian based, and caring owners! They make you feel like you are part \"of the family.\" Very supportive atmosphere by the staff, fellow dancers and parents. Worth every minute of your time spent here! Christ is clearly at the center of this dance studio."},
 
 
   ];
+
+
 
   // @ts-ignore
   return (
@@ -129,7 +138,6 @@ const Testimonials = () => {
         <div
             className={`testimonials-carousel fade-up ${testimonialsVisible ? "show delay-2" : ""}`}
         >
-
           <Carousel
               {...{
                 showArrows: true,
@@ -143,88 +151,31 @@ const Testimonials = () => {
                 className: "testimonial-carousel"
               } as any}
           >
-
-
-          {/* First group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(0, 3).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
-            {/* Second group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(3, 6).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
-            {/* Third group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(6, 9).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
-            {/* Fourth group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(9, 12).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
-            {/* Fifth group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(12, 15).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
-            {/* Sixth group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(15, 18).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
-            {/* Seventh group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(18, 21).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
-            {/* Eigth group of 3 */}
-            <div className="testimonials-cards">
-              {testimonials.slice(21, 24).map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <h3 className="testimonial-author">{testimonial.author}</h3>
-                    <div className="testimonial-stars">★★★★★</div>
-                    <p className="testimonial-text">{testimonial.text}</p>
-                  </div>
-              ))}
-            </div>
+            {isMobile ? (
+                // Mobile view - show one testimonial per slide
+                testimonials.map((testimonial, index) => (
+                    <div className="testimonials-cards" key={index}>
+                      <div className="testimonial-card">
+                        <h3 className="testimonial-author">{testimonial.author}</h3>
+                        <div className="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p className="testimonial-text">{testimonial.text}</p>
+                      </div>
+                    </div>
+                ))
+            ) : (
+                // Desktop view - show three testimonials per slide
+                Array.from({ length: Math.ceil(testimonials.length / 3) }).map((_, groupIndex) => (
+                    <div className="testimonials-cards" key={groupIndex}>
+                      {testimonials.slice(groupIndex * 3, groupIndex * 3 + 3).map((testimonial, index) => (
+                          <div key={index} className="testimonial-card">
+                            <h3 className="testimonial-author">{testimonial.author}</h3>
+                            <div className="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p className="testimonial-text">{testimonial.text}</p>
+                          </div>
+                      ))}
+                    </div>
+                ))
+            )}
           </Carousel>
         </div>
       </section>

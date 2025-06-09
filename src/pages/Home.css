@@ -865,7 +865,7 @@ body {
   }
 }
 
-/* ------------------ For screens up to 1200px ------------------ */
+/* ------------------------------------------------------------------------ For screens up to 1200px ----------------------------------------------------------------------- */
 @media (max-width: 1200px) {
   .our-mission {
     padding: 30px;
@@ -880,7 +880,7 @@ body {
   }
 }
 
-/* ------------------ For screens up to 980px (BIG CLICK) ------------------ */
+/* ------------------------------------------------------------------------ For screens up to 980px (BIG CLICK) ------------------------------------------------------ */
 @media (max-width: 980px) {
   .our-mission {
     flex-direction: column;
@@ -1003,7 +1003,11 @@ body {
   }
 }
 
-/* Tablet Media Query (max-width: 768px) */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Tablet Media Query (max-width: 768px)
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  */
+
 @media (max-width: 768px) {
   /* Banner adjustments */
   .homepage-banner {
@@ -1110,6 +1114,7 @@ body {
   /* Meet Team Section */
   .meet-team-heading {
     font-size: 2.5rem;
+    margin-bottom: -20px;
   }
 
   .team-items {
@@ -1156,16 +1161,8 @@ body {
     padding: 10px 18px;
   }
 
-  /* Skewed section adjustments */
-  .dance-classes::before,
-  .music-classes::before,
-  .featured-classes::before,
-  .why-us::before,
-  .next-steps::before,
-  .meet-team::before {
-    transform: skewY(2deg);
-    top: -30px;
-  }
+
+
 
   /* General spacing adjustments */
   .dance-classes,
@@ -1176,23 +1173,15 @@ body {
   }
 
   /* Title underline adjustments */
-  .our-mission h1::after,
-  .dance-text-container h1::after,
-  .music-text-container h1::after,
-  .featured-text-container h1::after {
-    width: 180px;
-    left: 50%;
-    transform: translateX(-50%) skewX(-15deg);
-  }
+
 }
 
 
-/* --------------------------------------------
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Mobile Large Media Query (max-width: 425px)
-  ------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   */
-@media screen and (max-width: 425px)
- {
+@media screen and (max-width: 425px) {
 
 
   html {
@@ -1213,7 +1202,6 @@ body {
   }
 
 
-
   /* Banner adjustments */
   .homepage-banner {
     height: 25vh;
@@ -1229,6 +1217,8 @@ body {
     padding: 15px;
     margin: 10px auto;
     gap: 20px;
+    padding-bottom: 40px;
+    margin-top: -35px;
   }
 
   .text-container {
@@ -1253,18 +1243,23 @@ body {
   }
 
 
-
   /* Why Us Section */
   .why-us {
     padding-bottom: 60px;
   }
 
   .why-us-content {
-    padding: 0 15px;
+    padding: 0;  /* Remove horizontal padding */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
 
   .why-us-heading {
     font-size: 2rem;
+    margin-top: -20px;
   }
 
   .why-us-text {
@@ -1273,14 +1268,18 @@ body {
   }
 
   .why-us-values {
-    gap: 20px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
+
   .why-us-value-card {
-    min-width: 100%;
-    padding: 15px;
-    margin: 0 10px;
+    width: 100%;
+    margin: 0 auto 20px;
+    max-width: 300px;  /* Adjust this value as needed */
   }
+
 
   .why-us-value-title {
     font-size: 1.1rem;
@@ -1316,7 +1315,9 @@ body {
 
   /* Next Steps Section */
   .next-steps {
-    padding-bottom: 60px;
+    padding-bottom: 50px;  /* Remove bottom padding */
+    margin-bottom: 0;   /* Remove bottom margin */
+    padding-top: -40px;
   }
 
   .next-steps-content {
@@ -1325,6 +1326,7 @@ body {
 
   .next-steps-heading {
     font-size: 2rem;
+    margin-top: -20px;
   }
 
   .next-steps-text {
@@ -1332,15 +1334,21 @@ body {
   }
 
   .next-steps-boxes {
-    gap: 20px;
+    flex-direction: column;  /* Stack boxes vertically */
+    align-items: center;     /* Center boxes horizontally */
+    gap: 15px;              /* Reduce gap between boxes */
   }
 
   .next-step-box {
-    width: 100%;
-    min-width: unset;
-    padding: 15px;
-    margin: 0 10px;
+    width: 90%;             /* Make boxes take most of the width */
+    margin-bottom: 15px;    /* Add space between boxes */
   }
+
+  /* Ensure the last box doesn't have extra margin */
+  .next-step-box:last-child {
+    margin-bottom: 0;
+  }
+
 
   .step-title {
     font-size: 1.3rem;
@@ -1365,17 +1373,6 @@ body {
     margin: 10px auto;
     display: block;
   }
-
-
-
-
-
-
-
-  /* General spacing and container adjustments */
-
-
-
 
   .button-container {
     display: flex;
@@ -1433,23 +1430,24 @@ body {
     order: 1;
   }
 
-  /* Reduce spacing above sections */
-  .dance-classes::before,
-  .music-classes::before,
-  .featured-classes::before {
-    top: -10px;
-  }
+
 
   /* Hide images as requested in previous change */
+
+
   .dance-image-container,
   .music-image-container,
   .featured-image-container {
     display: none;
   }
 
+  .dance-text-container{
+    margin-top: -35px;
+
+  }
+
   .dance-text-container,
-  .music-text-container
-  {
+  .music-text-container {
     padding: 5px;
     margin-bottom: -120px;
   }
@@ -1503,7 +1501,91 @@ body {
     width: 140px;
     height: 4px;
     bottom: -10px;
-  }
+    width: 180px;
+    left: 50%;
 
   }
+
+  .testimonials-section {
+    margin: 40px auto;
+    padding: 0 15px;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    width: 100%;
+    margin-top: -30px;
+
+  }
+
+  .testimonials-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .testimonials-title::after {
+    width: 180px;
+    height: 4px;
+    bottom: -10px;
+  }
+
+  .testimonials-cards {
+    /* Force single column layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .testimonial-author {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .testimonial-stars {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .testimonial-card::after {
+    width: 15px;
+    height: 15px;
+    top: 15px;
+    right: 8px;
+  }
+
+  .testimonial-images {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .testimonial-images img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+  .testimonial-images img:first-child {
+    width: 70%;  /* Make the first image (Kau78rI.png) smaller */
+    max-width: 450px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+  }
+
+  .testimonial-images img:last-child {
+    width: 100%;  /* Keep the second image full width */
+    max-width: 280px;
+    margin-bottom: -40px;
+  }
+
+}
 

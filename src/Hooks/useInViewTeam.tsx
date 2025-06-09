@@ -10,7 +10,7 @@ const MeetOurTeam = () => {
   return (
     <section className="meet-team" ref={teamRef}>
       <h1
-        className={`meet-team-heading fade-up ${teamVisible ? "show delay-3" : ""}`}
+        className={`meet-team-heading fade-up ${teamVisible ? "show" : ""}`}
       >
         MEET OUR TEAM
       </h1>
