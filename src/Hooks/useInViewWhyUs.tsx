@@ -3,7 +3,7 @@ import useInView from "./useInView.tsx";
 
 const WhyUs = () => {
   const { ref: whyUsRef, inView: whyUsVisible } = useInView<HTMLDivElement>({
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   return (

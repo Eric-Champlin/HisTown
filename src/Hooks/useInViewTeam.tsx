@@ -4,7 +4,7 @@ import useInView from "./useInView.tsx";
 
 const MeetOurTeam = () => {
   const { ref: teamRef, inView: teamVisible } = useInView<HTMLDivElement>({
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   return (

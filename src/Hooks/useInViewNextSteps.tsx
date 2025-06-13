@@ -5,7 +5,7 @@ import useInView from "./useInView.tsx";
 const NextSteps = () => {
   // Observe the entire section; adjust threshold as needed.
   const { ref: nextStepsRef, inView: nextStepsVisible } =
-    useInView<HTMLDivElement>({ threshold: 0.5 });
+    useInView<HTMLDivElement>({ threshold: 0.3 });
 
   return (
     <section className="next-steps" ref={nextStepsRef}>

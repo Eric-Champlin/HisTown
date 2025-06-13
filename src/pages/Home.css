@@ -815,9 +815,10 @@ body {
   opacity: 0;
   transform: translateY(50px);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+          opacity 0.4s ease,
+          transform 0.4s ease;
 }
+
 
 .fade-up.show {
   opacity: 1;
@@ -833,7 +834,7 @@ body {
 }
 
 .delay-4 {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 /* ==========================================================================
@@ -1058,6 +1059,7 @@ body {
   .music-text-container,
   .featured-text-container {
     text-align: center;
+
   }
 
   .dance-text-container h1,
@@ -1298,6 +1300,17 @@ body {
     font-size: 2rem;
   }
 
+  .meet-team h1 {
+    font-size: 2.5rem;
+  }
+
+  .meet-team h1::after {
+    width: 200px;
+
+  }
+
+
+
   .team-items {
     gap: 20px;
     padding: 0 15px;
@@ -1435,6 +1448,7 @@ body {
   /* Hide images as requested in previous change */
 
 
+
   .dance-image-container,
   .music-image-container,
   .featured-image-container {
@@ -1448,8 +1462,12 @@ body {
 
   .dance-text-container,
   .music-text-container {
+    margin-bottom: -150px;
+  }
+
+  .featured-text-container{
     padding: 5px;
-    margin-bottom: -120px;
+    margin-bottom: 0px;
   }
 
   /* Music/Band/Other Lessons Sections */
@@ -1519,6 +1537,7 @@ body {
   .testimonials-title {
     font-size: 2rem;
     margin-bottom: 30px;
+    margin-top: 0px;
   }
 
   .testimonials-title::after {
@@ -1586,6 +1605,12 @@ body {
     max-width: 280px;
     margin-bottom: -40px;
   }
+
+  .testimonials-section .carousel .control-dots {
+    display: none;
+  }
+
+
 
 }
 
