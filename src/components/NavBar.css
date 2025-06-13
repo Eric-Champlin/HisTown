@@ -631,9 +631,12 @@ ul {
     margin: 0;
     padding: 0;
     color: #333;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 2rem;
     text-decoration: none;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 1px #333;
+
   }
   .navbar-icons-mobile,
   .mobile-social-icons {

@@ -54,21 +54,71 @@ Try adding these to all queries here (or maybe try Home.css)*/
 @media screen and (max-width: 425px) {
   /* Root layout control */
 
-  html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    -webkit-text-size-adjust: 100%;
-  }
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        -webkit-text-size-adjust: 100%;
+        position: relative;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #root {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
 
   /* Force all sections to contain their content */
-  .homepage {
+    .homepage,
+    .classes-page,
+    .music-page,
+    .store-page,
+    .about-page,
+    .testimonials-page,
+    .contact-page,
+    .piano-page,
+    .violin-page,
+    .vocals-page,
+    .acro-page,
+    .acting-page,
+    .adult-page,
+    .ballet-page,
+    .barre-page,
+    .birthday-page,
+    .company-page,
+    .contemporary-page,
+    .creative-movement-page,
+    .dance-page,
+    .dresscode-page,
+    .featured-page,
+    .foundations-page,
+    .goddard-page,
+    .hip-hop-page,
+    .jazz-page,
+    .modern-page,
+    .mommy-me-page,
+    .musical-theater-page
+ {
     width: 100%;
     max-width: 100%;
     overflow-x: clip;
     position: relative;
   }
+
 
   /* Handle skewed sections differently on mobile */
   .music-lessons::before,
@@ -92,7 +142,12 @@ Try adding these to all queries here (or maybe try Home.css)*/
   .testimonials-section,
   .meet-team,
   .why-us,
-  .next-steps {
+  .next-steps,
+  .classes-grid,
+  .about-content,
+  .contact-content,
+  .store-content
+ {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
