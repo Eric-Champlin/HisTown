@@ -607,7 +607,15 @@ ul {
     display: flex;
     transform: translateY(0);
     opacity: 1;
+    background-color: white;
   }
+
+  .navbar-links.open .navbar-link {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 900;
+  }
+
+
   .navbar-links li {
     list-style: none;
     margin: 0;
@@ -668,9 +676,8 @@ ul {
     border-color: #408eb2;
   }
   .free-trial-mobile {
-    background-color: white;
-    color: #408eb2;
-    border: 2px solid #408eb2;
+    background-color: #408eb2;
+    color: #ffffff;
     padding: 12px 25px;
     border-radius: 5px;
     font-size: 0.8em;
@@ -682,10 +689,14 @@ ul {
   .free-trial-mobile:hover {
     background-color: #eef6f9;
   }
+
+  .navbar-links.open .free-trial-mobile {
+    border: none;
+  }
+
   .navbar-icons-mobile .login-mobile {
-    background-color: white;
-    color: #408eb2;
-    border: 2px solid #408eb2;
+    background-color: #408eb2;
+    color: #ffffff;
     padding: 12px 25px;
     border-radius: 5px;
     font-size: 0.8em;
@@ -696,6 +707,9 @@ ul {
     margin-top: 25px;
     margin-bottom: 10px;
   }
+
+
+
   .navbar-icons-mobile .login-mobile:hover {
     background-color: #eef6f9;
   }

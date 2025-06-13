@@ -1293,7 +1293,7 @@ body {
 
   /* Meet Team Section */
   .meet-team {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
   .meet-team-heading
@@ -1303,7 +1303,8 @@ body {
   }
 
   .meet-team h1 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
+    margin-top: 10px;
   }
 
   .meet-team h1::after {
@@ -1314,7 +1315,7 @@ body {
 
 
   .team-items {
-    gap: 5px;
+    gap: 25px !important;
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -1529,14 +1530,33 @@ body {
   }
 
   /* Title underline adjustments */
-  .our-mission h1::after,
-  .dance-text-container h1::after,
-  .music-text-container h1::after,
-  .featured-text-container h1::after {
+  .our-mission h1::after {
     width: 140px;
     height: 4px;
     bottom: -10px;
-    width: 180px;
+    left: 50%;
+  }
+
+  .dance-text-container h1::after {
+    width: 140px;
+    height: 4px;
+    bottom: -10px;
+    left: 50%;
+
+  }
+
+  .music-text-container h1::after {
+    width: 140px;
+    height: 4px;
+    bottom: -10px;
+    left: 50%;
+
+  }
+
+  .featured-text-container h1::after {
+    width: 100px;
+    height: 4px;
+    bottom: -10px;
     left: 50%;
 
   }
