@@ -1599,13 +1599,22 @@ body {
     align-items: center;
     gap: 15px;
     width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+
   }
 
   .testimonial-card {
-    width: 100%;
+    width: 100% !important;
     max-width: 100%;
     margin-bottom: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  }
+
+  .carousel .slide {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .testimonial-author {
