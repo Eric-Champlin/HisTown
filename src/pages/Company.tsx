@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Company = () => {
   return (
-    <div>
+    <div className="page-wrapper">
       <NavBar />
             {/* Banner Section */}
             <div className="classes-banner">

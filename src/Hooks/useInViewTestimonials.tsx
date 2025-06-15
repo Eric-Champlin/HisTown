@@ -126,14 +126,16 @@ const Testimonials = () => {
             className={`testimonial-images fade-up ${testimonialsVisible ? "show" : ""}`}
         >
           <img
-              src="https://i.imgur.com/Kau78rI.png"
-              alt="Testimonial Graphic 1"
-          />
-          <img
-              src="https://i.imgur.com/kJ8BGVS.png"
+              src="https://i.imgur.com/2yG3qAq.png"
               alt="Testimonial Graphic 2"
               className="testimonial-image-larger"
           />
+          <img
+              src="https://i.imgur.com/Kau78rI.png"
+              alt="Testimonial Graphic 1"
+              className="testimonial-image-larger"
+          />
+
         </div>
         <div
             className={`testimonials-carousel fade-up ${testimonialsVisible ? "show delay-2" : ""}`}

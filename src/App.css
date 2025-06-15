@@ -1,6 +1,87 @@
+
+
+
 .App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   text-align: center;
+
 }
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+/* Global page styles - outside media query */
+.homepage,
+.classes-page,
+.music-page,
+.store-page,
+.about-page,
+.testimonials-page,
+.contact-page,
+.piano-page,
+.violin-page,
+.vocals-page,
+.acro-page,
+.acting-page,
+.adult-page,
+.ballet-page,
+.barre-page,
+.birthday-page,
+.company-page,
+.contemporary-page,
+.creative-movement-page,
+.dance-page,
+.dresscode-page,
+.featured-page,
+.foundations-page,
+.goddard-page,
+.hip-hop-page,
+.jazz-page,
+.modern-page,
+.mommy-me-page,
+.musical-theater-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* This is key */
+  width: 100%;
+  position: relative;
+
+
+
+
+}
+
+.page-content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  width: 100%;
+    margin-top: auto;
+
+}
+
+
+
+
+/* Global footer style - outside media query */
+footer {
+  margin-top: auto !important;
+}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -52,37 +133,39 @@ Try adding these to all queries here (or maybe try Home.css)*/
 /*Scrolling fix*/
 /* Mobile-specific fixes (425px and below) */
 @media screen and (max-width: 425px) {
-  /* Root layout control */
-
-    html {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-text-size-adjust: 100%;
-        position: relative;
-    }
-
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        position: relative;
-        -webkit-overflow-scrolling: touch;
-    }
-
+    /* Root layout control */
+    html,
+    body,
     #root {
-        width: 100%;
         height: 100%;
-        overflow-x: hidden;
-        position: relative;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
     }
 
 
-  /* Force all sections to contain their content */
+    #root,
+    .App {
+        min-height: 100vh;
+        width: 100%;
+    }
+
+
+    .App {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        text-align: center;
+
+
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+
+    /* Force all sections to contain their content */
     .homepage,
     .classes-page,
     .music-page,
@@ -111,76 +194,117 @@ Try adding these to all queries here (or maybe try Home.css)*/
     .jazz-page,
     .modern-page,
     .mommy-me-page,
-    .musical-theater-page
- {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: clip;
-    position: relative;
-  }
+    .musical-theater-page {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        width: 100%;
 
 
-  /* Handle skewed sections differently on mobile */
-  .music-lessons::before,
-  .dance-lessons::before,
-  .featured-classes::before,
-  .meet-team::before,
-  .why-us::before,
-  .next-steps::before {
-    width: 150%;
-    left: -25%;
+    }
 
-  }
-
+    .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: auto;
+    }
 
 
-  /* Mobile container adjustments */
-  .our-mission,
-  .music-lessons,
-  .dance-lessons,
-  .featured-classes,
-  .testimonials-section,
-  .meet-team,
-  .why-us,
-  .next-steps,
-  .classes-grid,
-  .about-content,
-  .contact-content,
-  .store-content
- {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-    /*overflow: hidden;*/
-  }
+    /* Handle skewed sections differently on mobile */
+    .music-lessons::before,
+    .dance-lessons::before,
+    .featured-classes::before,
+    .meet-team::before,
+    .why-us::before,
+    .next-steps::before {
+        width: 150%;
+        left: -25%;
 
-  /* Carousel containment */
-  .carousel-root {
-    width: 100%;
-    overflow: hidden;
-  }
+    }
 
-  .carousel .slide img {
-    width: 100%;
-    object-fit: cover;
-  }
 
-  /* Nested container fixes */
-  .text-container,
-  .image-container,
-  .dance-lessons-inner,
-  .music-program-inner,
-  .featured-lessons-inner {
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-  }
+    /* Mobile container adjustments */
+    .our-mission,
+    .music-lessons,
+    .dance-lessons,
+    .featured-classes,
+    .testimonials-section,
+    .meet-team,
+    .why-us,
+    .next-steps,
+    .classes-grid,
+    .about-content,
+    .contact-content,
+    .store-content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        /*overflow: hidden;*/
+    }
 
-  /* Force single-column layout */
-  .our-mission {
-    flex-direction: column;
-  }
+    /* Carousel containment */
+    .carousel-root {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel .slide img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Nested container fixes */
+    .text-container,
+    .image-container,
+    .dance-lessons-inner,
+    .music-program-inner,
+    .featured-lessons-inner {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Force single-column layout */
+}
+
+
+@media screen and (max-width: 544px) {
+
+
+
+    /* Add this to ensure content fills available space */
+    .next-steps {
+        margin-bottom: 50px;
+        padding-bottom: 0;
+    }
+
+    .next-steps::before {
+        height: 120%; /* Reduce the height of the skewed background */
+    }
+
+    .next-steps-boxes {
+        margin-bottom: 0;
+    }
+
+    .next-step-box {
+        margin-bottom: 20px; /* Reduce bottom margin of boxes */
+    }
+
+    .next-step-box:last-child {
+        margin-bottom: 0; /* Remove margin from last box */
+    }
+
+    /* Adjust the button margin in mobile view */
+    .step-button {
+        margin-bottom: 10px;
+    }
+
+
+
 }

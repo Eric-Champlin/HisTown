@@ -421,8 +421,14 @@ body {
   border-radius: 10px;
 }
 
-.testimonial-images .testimonial-image-larger {
-  max-width: 700px;
+/* First image */
+.testimonial-images .testimonial-image-larger:nth-child(1) {
+  max-width: 230px;
+  margin-bottom: 5px;
+}
+
+.testimonial-images .testimonial-image-larger:nth-child(2) {
+  max-width: 200px;
 }
 
 /* Testimonial card logo overlay */
@@ -1480,7 +1486,7 @@ body {
 
   .dance-text-container,
   .music-text-container {
-    margin-bottom: -150px;
+    margin-bottom: -180px;
   }
 
   .featured-text-container{

@@ -6,7 +6,7 @@ import NextSteps from "../Hooks/useInViewNextSteps.tsx";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="page-wrapper">
       <NavBar />
 
       {/* Banner Section */}
