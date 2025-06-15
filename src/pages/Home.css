@@ -1603,6 +1603,11 @@ body {
     margin: 0 !important;
 
   }
+  .testimonials-cards {
+    transform: translateX(-5px);
+  }
+
+
 
   .testimonial-card {
     width: 100% !important;
