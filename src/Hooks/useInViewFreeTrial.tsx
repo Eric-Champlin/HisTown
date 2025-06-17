@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useInView from "./useInView.tsx";
+import useInView from "./useInView";
 
 const FreeTrialMotion = () => {
   // Observe the entire section; adjust threshold as needed.

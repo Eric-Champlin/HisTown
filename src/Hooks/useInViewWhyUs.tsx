@@ -1,5 +1,5 @@
 import React from "react";
-import useInView from "./useInView.tsx";
+import useInView from "./useInView";
 
 const WhyUs = () => {
   const { ref: whyUsRef, inView: whyUsVisible } = useInView<HTMLDivElement>({

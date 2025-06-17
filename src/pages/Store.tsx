@@ -1,11 +1,11 @@
 import React from "react";
 import "./Store.css";
-// @ts-ignore
-import NavBar from "../components/NavBar.tsx";
-// @ts-ignore
-import Footer from "../components/Footer.tsx";
-// @ts-ignore
-import NextSteps from "../Hooks/useInViewNextSteps.tsx";
+
+import NavBar from "../components/NavBar";
+
+import Footer from "../components/Footer";
+
+import NextSteps from "../Hooks/useInViewNextSteps";
 
 const Store = () => {
   return (

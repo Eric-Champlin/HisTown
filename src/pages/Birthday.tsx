@@ -1,8 +1,8 @@
 import React from "react";
 import "./Birthday.css";
-import NextSteps from "../Hooks/useInViewNextSteps.tsx";
-import NavBar from "../components/NavBar.tsx";
-import Footer from "../components/Footer.tsx";
+import NextSteps from "../Hooks/useInViewNextSteps";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const Birthday = () => {
   return (

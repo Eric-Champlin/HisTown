@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
 import "./More.css";
-import NavBar from "../components/NavBar.tsx";
-import Footer from "../components/Footer.tsx";
-import NextSteps from "../Hooks/useInViewNextSteps.tsx";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import NextSteps from "../Hooks/useInViewNextSteps";
 
 
 const Classes = () => {

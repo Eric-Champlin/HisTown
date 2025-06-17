@@ -1,8 +1,8 @@
 import React from "react";
 import "./Contact.css";
-import NavBar from "../components/NavBar.tsx";
-import Footer from "../components/Footer.tsx";
-import NextSteps from "../Hooks/useInViewNextSteps.tsx";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import NextSteps from "../Hooks/useInViewNextSteps";
 
 const Contact = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//@ts-ignore
-import useInView from "./useInView.tsx";
+//
+import useInView from "./useInView";
 
 const FeaturedClasses = () => {
   const { ref: otherRef, inView: otherVisible } = useInView<HTMLDivElement>({

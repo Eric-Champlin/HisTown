@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useInView from "./useInView.tsx";
+import useInView from "./useInView";
 
 const MusicClasses = () => {
   const { ref: bandRef, inView: bandVisible } = useInView<HTMLDivElement>({

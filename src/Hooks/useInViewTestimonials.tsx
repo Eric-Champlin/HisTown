@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-//@ts-ignore
-import useInView from "./useInView.tsx";
+//
+import useInView from "./useInView";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -114,7 +114,7 @@ const Testimonials = () => {
 
 
 
-  // @ts-ignore
+  
   return (
       <section className="testimonials-section" ref={testimonialsRef}>
         <h1

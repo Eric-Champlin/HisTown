@@ -13,6 +13,7 @@ interface BannerCarouselProps {
 }
 
 const BannerCarousel: React.FC<BannerCarouselProps> = () => {
+
     return (
         <div className="banner-carousel">
             <Carousel

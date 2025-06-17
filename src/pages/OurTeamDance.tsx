@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./OurTeamDance.css";       // <-- Import the new CSS file
-import NavBar from "../components/NavBar.tsx";
-import Footer from "../components/Footer.tsx";
-import NextSteps from "../Hooks/useInViewNextSteps.tsx";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import NextSteps from "../Hooks/useInViewNextSteps";
 
 const OurTeamDance = () => {
   // Example array of 8 teachers (adjust images/links as needed):
