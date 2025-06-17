@@ -2,21 +2,35 @@ import React from "react";
 import "./FreeTrial.css";
 import NavBar from "../components/NavBar.tsx";
 import Footer from "../components/Footer.tsx";
-import FreeTrialMotion from "../Hooks/useInViewFreeTrial.tsx";
+import NextSteps from "../Hooks/useInViewNextSteps.tsx";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 
 const FreeTrial = () => {
   return (
     <div>
       <NavBar />
-            {/* Banner Section */}
-            <div className="classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Classes Banner"
-          className="classes-banner-image"
-        />
-      </div>
+        <Carousel
+            autoPlay
+            infiniteLoop
+            showStatus={false}
+            showThumbs={false}
+            interval={5000}
+            showArrows={true}
+        >
+            <div>
+                <img src="https://i.imgur.com/poLiUHv.png" alt="Dance Studio 1" />
+            </div>
+            <div>
+                <img src="https://i.imgur.com/poLiUHv.png" alt="Dance Studio 2" />
+            </div>
+            <div>
+                <img src="https://i.imgur.com/poLiUHv.pngg" alt="Dance Studio 3" />
+            </div>
+        </Carousel>
+
 
 
   <div style={{ textAlign: "center" }}>
@@ -30,7 +44,8 @@ const FreeTrial = () => {
   </p>
 </div>
 
-<FreeTrialMotion />
+        <NextSteps />
+
       <Footer />
     </div>
   );

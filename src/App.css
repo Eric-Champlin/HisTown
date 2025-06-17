@@ -134,35 +134,34 @@ Try adding these to all queries here (or maybe try Home.css)*/
 /* Mobile-specific fixes (425px and below) */
 @media screen and (max-width: 425px) {
     /* Root layout control */
-    html,
-    body,
-    #root {
+    html {
+        scroll-behavior: auto;
         height: 100%;
+    }
+
+    body {
         min-height: 100%;
-        margin: 0;
-        padding: 0;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
+    #root {
+        min-height: 100%;
+        position: relative;
+    }
 
-    #root,
     .App {
         min-height: 100vh;
-        width: 100%;
+        position: relative;
     }
 
-
-    .App {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        text-align: center;
-
-
-    }
 
     main {
         flex: 1 0 auto;
     }
+
+
 
 
     /* Force all sections to contain their content */

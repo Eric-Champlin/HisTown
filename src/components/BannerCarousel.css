@@ -1,0 +1,49 @@
+
+.banner-carousel {
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.banner-carousel .carousel {
+    height: 100%;
+}
+
+.banner-carousel .carousel .slide img {
+    height: 35vh;
+    object-fit: cover;
+}
+
+/* Arrow styles */
+.banner-carousel .carousel .control-arrow {
+    background: rgba(0, 0, 0, 0.3);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.banner-carousel .carousel .control-prev.control-arrow {
+    left: 15px;
+}
+
+.banner-carousel .carousel .control-next.control-arrow {
+    right: 15px;
+}
+
+/* Dot indicators */
+.banner-carousel .carousel .control-dots {
+    bottom: 20px;
+}
+
+.banner-carousel .carousel .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.banner-carousel .carousel .dot.selected {
+    background: #ffffff;
+}
