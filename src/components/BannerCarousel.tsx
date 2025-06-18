@@ -4,18 +4,24 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./BannerCarousel.css";
 
-interface BannerCarouselProps {
-    images: {
-        src: string;
-        alt: string;
-    }[];
-    interval?: number;
-}
-
-const BannerCarousel: React.FC<BannerCarouselProps> = () => {
+const BannerCarousel: React.FC = () => {
+    const images = [
+        {
+            src: "https://i.imgur.com/poLiUHv.png",
+            alt: "Dance studio performance"
+        },
+        {
+            src: "https://i.imgur.com/poLiUHv.png",
+            alt: "Dance recital showcase"
+        },
+        {
+            src: "https://i.imgur.com/poLiUHv.png",
+            alt: "Student dance performance"
+        }
+    ];
 
     return (
-        <div className="banner-carousel">
+        <div>
             <Carousel
                 {...({
                     showArrows: true,
@@ -27,24 +33,14 @@ const BannerCarousel: React.FC<BannerCarouselProps> = () => {
                     interval: 3000,
                 } as any)}
             >
-                <div>
-                    <img
-                        src="https://i.imgur.com/poLiUHv.png"
-                        alt="Dance studio performance"
-                    />
-                </div>
-                <div>
-                    <img
-                        src="https://i.imgur.com/poLiUHv.png"
-                        alt="Dance recital showcase"
-                    />
-                </div>
-                <div>
-                    <img
-                        src="https://i.imgur.com/poLiUHv.png"
-                        alt="Student dance performance"
-                    />
-                </div>
+                {images.map((image, index) => (
+                    <div key={index}>
+                        <img
+                            src={image.src}
+                            alt={image.alt}
+                        />
+                    </div>
+                ))}
             </Carousel>
         </div>
     );

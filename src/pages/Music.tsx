@@ -4,6 +4,7 @@ import "./Music.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextSteps from "../Hooks/useInViewNextSteps";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 
 const Classes = () => {
@@ -12,13 +13,8 @@ const Classes = () => {
       <NavBar />
 
       {/* Banner Section */}
-      <div className="dance-classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Dance Classes Banner"
-          className="dance-classes-banner-image"
-        />
-      </div>
+        <BannerCarousel />
+
 
       {/* Title + Underline */}
       <h1 className="classes-title">MUSIC</h1>
@@ -64,12 +60,18 @@ const Classes = () => {
     </div>
     <p className="classes-label">VOCAL</p>
   </Link>
+
 </div>
 
 
-        {/* 4. Adult */}
-        
+
+
       </div>
+
+
+        <Link to="/about/our-team" className="all-music-button-link">
+            <button className="all-music-button">OUR TEAM</button>
+        </Link>
       <NextSteps />
 
       <Footer />

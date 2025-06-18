@@ -6,6 +6,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 import NextSteps from "../Hooks/useInViewNextSteps";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 const Store = () => {
   return (
@@ -13,13 +14,8 @@ const Store = () => {
       <NavBar />
 
       {/* Banner Section */}
-      <div className="dance-classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Dance Classes Banner"
-          className="dance-classes-banner-image"
-        />
-      </div>
+        <BannerCarousel />
+
 
       {/* Title + Underline */}
       <h1 className="classes-title">STORE</h1>

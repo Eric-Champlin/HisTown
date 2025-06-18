@@ -3,7 +3,8 @@ import "./OurTeamDelia.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextSteps from "../Hooks/useInViewNextSteps";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 
 
@@ -12,13 +13,8 @@ const OurTeamDelia = () => {
     <div>
       <NavBar />
             {/* Banner Section */}
-            <div className="classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Classes Banner"
-          className="classes-banner-image"
-        />
-      </div>
+        <BannerCarousel />
+
       <div style={{ textAlign: "center" }}>
   <h1 className="dance-classes-title">DELIA</h1>
   <div className="dance-teachers-title-underline-delia"></div>

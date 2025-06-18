@@ -4,6 +4,7 @@ import "./OurTeamDance.css";       // <-- Import the new CSS file
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextSteps from "../Hooks/useInViewNextSteps";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 const OurTeamDance = () => {
   // Example array of 8 teachers (adjust images/links as needed):
@@ -22,13 +23,8 @@ const OurTeamDance = () => {
       <NavBar />
 
       {/* Banner Section */}
-      <div className="dance-teachers-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Dance Teachers Banner"
-          className="dance-teachers-banner-image"
-        />
-      </div>
+        <BannerCarousel />
+
 
       {/* Page Title & Underline */}
       <h1 className="dance-teachers-title">DANCERS</h1>

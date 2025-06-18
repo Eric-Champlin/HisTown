@@ -3,19 +3,15 @@ import "./Birthday.css";
 import NextSteps from "../Hooks/useInViewNextSteps";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 const Birthday = () => {
   return (
     <div>
       <NavBar />
       {/* Banner Section */}
-      <div className="classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Classes Banner"
-          className="classes-banner-image"
-        />
-      </div>
+      <BannerCarousel />
+
 
       <div style={{ textAlign: "center" }}>
         <h1 className="dance-classes-title">BIRTHDAY PARTIES</h1>

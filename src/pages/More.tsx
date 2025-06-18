@@ -4,6 +4,7 @@ import "./More.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextSteps from "../Hooks/useInViewNextSteps";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 
 const Classes = () => {
@@ -12,13 +13,8 @@ const Classes = () => {
       <NavBar />
 
       {/* Banner Section */}
-      <div className="classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Classes Banner"
-          className="classes-banner-image"
-        />
-      </div>
+        <BannerCarousel />
+
 
       {/* Title + Underline */}
       <h1 className="classes-title">MORE</h1>

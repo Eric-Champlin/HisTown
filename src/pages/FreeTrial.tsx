@@ -3,8 +3,8 @@ import "./FreeTrial.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextSteps from "../Hooks/useInViewNextSteps";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 
 
@@ -12,24 +12,8 @@ const FreeTrial = () => {
   return (
     <div>
       <NavBar />
-        <Carousel
-            autoPlay
-            infiniteLoop
-            showStatus={false}
-            showThumbs={false}
-            interval={5000}
-            showArrows={true}
-        >
-            <div>
-                <img src="https://i.imgur.com/poLiUHv.png" alt="Dance Studio 1" />
-            </div>
-            <div>
-                <img src="https://i.imgur.com/poLiUHv.png" alt="Dance Studio 2" />
-            </div>
-            <div>
-                <img src="https://i.imgur.com/poLiUHv.pngg" alt="Dance Studio 3" />
-            </div>
-        </Carousel>
+        <BannerCarousel />
+
 
 
 

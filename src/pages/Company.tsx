@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextSteps from "../Hooks/useInViewNextSteps";
 import { Link } from "react-router-dom";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 
 
@@ -12,13 +13,8 @@ const Company = () => {
     <div className="page-wrapper">
       <NavBar />
             {/* Banner Section */}
-            <div className="classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Classes Banner"
-          className="classes-banner-image"
-        />
-      </div>
+        <BannerCarousel />
+
       <div style={{ textAlign: "center" }}>
   <h1 className="dance-classes-title">COMPANY</h1>
   <div className="dance-classes-title-underline-company"></div>

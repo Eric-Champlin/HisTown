@@ -2,7 +2,8 @@ import React from "react";
 import "./DressCode.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
+import BannerCarousel from "../components/BannerCarousel.tsx";
 
 
 const DressCode = () => {
@@ -11,13 +12,8 @@ const DressCode = () => {
       <NavBar />
 
       {/* Banner Section */}
-      <div className="classes-banner">
-        <img
-          src="https://i.imgur.com/poLiUHv.png"
-          alt="Classes Banner"
-          className="classes-banner-image"
-        />
-      </div>
+        <BannerCarousel />
+
 
       {/* Title & Underline */}
       <div className="dresscode-header">
