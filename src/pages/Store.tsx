@@ -18,8 +18,8 @@ const Store = () => {
 
 
       {/* Title + Underline */}
-      <h1 className="classes-title">STORE</h1>
-      <div className="music-title-underline"></div>
+        <h1 className="classes-title">STORE</h1>
+        <div className="underline-store"></div>
 
       {/* 3×2 Grid of Cards */}
       <div className="classes-grid">

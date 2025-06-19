@@ -22,3 +22,40 @@ margin-bottom: 40px;
 font-weight: bold;
 
 }
+
+@media screen and (max-width: 425px) {
+    /* Blue underline */
+    .classes-title {
+        margin-bottom: 10px !important;
+    }
+
+    .underline-store {
+        width: 80px !important;
+        height: 5px !important;
+        background-color: #408eb2 !important;
+        border-radius: 3px !important;
+        margin: 0 auto 40px auto !important;
+        transform: skewX(-15deg) !important;
+    }
+
+    /* Remove margin under last image */
+    .classes-grid {
+        margin-bottom: -20px !important;
+    }
+
+    /* Add margin under merch message */
+    .merch-message {
+        margin-top: -80px !important;
+        margin-bottom: 60px !important;
+    }
+
+    /* Adjust Next Steps spacing */
+    .next-steps {
+        margin-top: 0 !important;
+    }
+
+    .classes-picture:last-child .classes-label {
+        margin-bottom: 0 !important;
+    }
+
+}

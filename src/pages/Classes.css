@@ -142,5 +142,73 @@
       border-radius: 15px;
     }
   }
-  
-  
+
+@media screen and (max-width: 425px) {
+  /* Make all image containers and cards consistent size */
+  .classes-card,
+  .team-card,
+  .testimonial-card,
+  .why-us-value-card {
+    width: 280px !important;
+    height: 180px !important; /* Reduced height for mobile */
+    margin: 0 auto 15px auto;
+  }
+
+  /* Make all content images consistent size */
+  .dance-image-container img,
+  .music-image-container img,
+  .featured-image-container img,
+  .image-container img,
+  .classes-card img,
+  .team-card img {
+    max-width: 280px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    margin: 10px auto !important;
+  }
+
+  /* Grid adjustments for consistent spacing */
+  .classes-grid,
+  .team-items,
+  .testimonials-cards {
+    gap: 20px !important;
+    padding: 0 20px !important;
+  }
+
+  /* Adjust card labels for consistency */
+  .classes-label,
+  .team-label {
+    font-size: 1.2rem !important;
+    margin: 8px 0 !important;
+  }
+
+  .classes-title-underline {
+    /* Blue underline similar to your existing style */
+    width: 120px;
+    height: 5px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto; /* Center it + space below for the grid */
+    transform: skewX(-15deg); /* Slant it a bit, if you want the same angled style */
+  }
+  .classes-grid {
+    margin-bottom: 60px !important;
+  }
+
+  /* Ensure proper spacing for last card */
+  .classes-item:last-child .classes-label {
+    margin-bottom: 110px !important;
+  }
+
+  /* Adjust Next Steps spacing */
+  .next-steps {
+    margin-top: 30px !important;
+  }
+
+  .classes-title {
+    margin-top: 10px !important; /* Reduced from 40px */
+    margin-bottom: 0px !important; /* Reduced from 10px */
+  }
+
+
+}

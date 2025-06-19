@@ -1253,7 +1253,7 @@ body {
 
   /* Why Us Section */
   .why-us {
-    padding-bottom: 60px;
+    padding-bottom: 80px !important;
   }
 
   .why-us-content {
@@ -1330,18 +1330,34 @@ body {
   }
 
   .team-item {
-    width: 260px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Center the item content */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 280px !important;
+    margin: 0 auto !important;
   }
+
 
 
   .team-card {
-    width: 260px !important; /* Force override with !important */
-    height: 240px !important;
-    margin: 0 auto;
+    width: 280px !important;
+    height: 180px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: flex-start !important;
   }
+
+
+
+
+  .team-card img {
+    width: 280px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    margin-top: 0px !important; /* This pushes the image up slightly */
+  }
+
+
 
   .team-label {
     font-size: 1.6rem;

@@ -27,5 +27,39 @@
   .vocal-card img {
     object-position: 50% 40%;
   }
-  
-  
+
+  @media screen and (max-width: 425px) {
+    /* Target the grid container */
+    .more-grid {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    /* Target the Contact card container */
+    .more-grid .classes-item:last-child {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    /* Target the Contact card label */
+    .more-grid .classes-item:last-child .classes-label {
+      margin: 8px 0 0 0 !important;
+      padding-bottom: 0 !important;
+    }
+    .classes-picture:last-child {
+      margin-bottom: 60px !important;
+    }
+
+    /* Adjust Next Steps spacing */
+    .next-steps {
+      margin-top: 30px !important;
+      padding-top: 30px !important;
+    }
+
+    /* Ensure proper spacing for the grid */
+    .classes-grid {
+      margin-bottom: 30px !important;
+    }
+
+
+  }

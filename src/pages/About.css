@@ -33,4 +33,127 @@
 
 
 
-  
+  @media screen and (max-width: 425px) {
+    /* Convert 2x2 grid to single column */
+    .classes-grid-2x2 {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+      padding: 0 20px !important;
+      margin: 30px auto !important;
+    }
+
+    /* Make all cards and images consistent size */
+    .classes-grid-2x2 .classes-card {
+      width: 280px !important;
+      height: 180px !important;
+      margin: 0 auto !important;
+    }
+
+    /* Consistent image styling */
+    .classes-grid-2x2 .classes-card img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center center !important; /* Reset any custom positioning */
+    }
+
+    /* Center the items */
+    .classes-grid-2x2 .classes-item {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 100% !important;
+    }
+
+    /* Fix for specific cards that might have custom styling */
+    .classes-grid-2x2 .classes-item:first-of-type .classes-card img,
+    .classes-grid-2x2 .classes-item:nth-of-type(3) .classes-card img {
+      object-fit: cover !important;
+      object-position: center center !important;
+    }
+
+    /* Consistent label styling */
+    .classes-grid-2x2 .classes-label {
+      font-size: 1.2rem !important;
+      margin: 10px 0 20px 0 !important;
+      text-align: center !important;
+    }
+
+    .dance-classes-banner-image {
+      margin-bottom: 5px !important;
+    }
+
+    .classes-grid-2x2 {
+      grid-template-columns: 1fr !important;
+      gap: 5px !important; /* Reduced from 30px */
+      padding: 0 20px !important;
+      margin: 15px auto !important;
+    }
+
+
+    /* Keep testimonials card container size but shrink image */
+    .classes-grid-2x2 .classes-item:nth-of-type(3) .classes-card {
+      width: 280px !important;
+      height: 180px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    /* Adjust testimonial image within container */
+    .classes-grid-2x2 .classes-item:nth-of-type(3) .classes-card img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain !important;
+    }
+
+
+      /* Adjust Our Team image position within container */
+      .classes-grid-2x2 .classes-item:first-of-type .classes-card img {
+        object-position: center 35% !important; /* Push the image down a bit more */
+      }
+
+      /* Adjust KLOVE image size within container */
+      .classes-grid-2x2 .classes-item:nth-of-type(4) .classes-card img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        margin: auto !important;
+      }
+    .next-steps {
+      margin-top: 50px !important;
+    }
+
+    /* And/or adjust the grid bottom margin */
+    .classes-grid {
+      margin-bottom: 100px !important;
+    }
+    .classes-grid-2x2 .classes-item:nth-of-type(4) {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    /* Remove spacing after the KLOVE card label */
+    .classes-grid-2x2 .classes-item:nth-of-type(4) .classes-label {
+      margin-bottom: 80px !important;
+    }
+
+    /* Remove spacing before Next Steps */
+    .next-steps {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+    .classes-title {
+      margin-top: 10px !important;
+      margin-bottom: 0px !important;
+    }
+
+    .about-title-underline {
+      width: 80px !important;
+      height: 5px !important;
+      margin: 0 auto 20px auto !important; /* Reduced from 40px to 20px */
+    }
+
+
+  }

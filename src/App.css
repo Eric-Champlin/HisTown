@@ -269,7 +269,62 @@ Try adding these to all queries here (or maybe try Home.css)*/
         margin: 0;
     }
 
-    /* Force single-column layout */
+
+        /* Page Titles - Global */
+        .contact-page-title,
+        .dance-classes-title,
+        .our-mission h1,
+        .classes-title,
+        .testimonials-title,
+        .next-steps-heading,
+        .why-us-heading,
+        .meet-team-heading {
+            font-size: 2.2rem !important; /* Force consistency */
+            margin-top: 15px;
+        }
+
+    .our-mission h1::after,
+    .contact-page-title::after,
+    .dance-classes-title::after,
+    .classes-title::after,
+    .testimonials-title::after,
+    .next-steps-heading::after,
+    .why-us-heading::after,
+    .meet-team-heading::after,
+    .dance-classes-title-underline-dresscode,
+    .dance-classes-title-underline-tap,
+    .dance-classes-title-underline-acro,
+    .dance-text-container h1::after,
+    .music-text-container h1::after,
+    .featured-text-container h1::after
+ {
+        bottom: -10px !important;
+        height: 5px !important; /* Force consistent underline thickness */
+    }
+
+    .why-us-heading::after {
+        width: 100px !important; /* Force consistent underline width */
+    }
+
+
+    .next-steps-heading::after{
+        width: 140px !important; /* Force consistent underline width */
+
+
+    }
+
+
+    .testimonials-title
+{
+        margin-top: -10px;
+    }
+
+
+    .why-us-heading,
+    .next-steps-heading{
+        margin-top: -10px;
+    }
+
 }
 
 
