@@ -43,17 +43,51 @@
 
 
 @media screen and (max-width: 425px) {
+    /* Adjust the image size */
+    .adult-image {
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .adult-image img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 30px auto 20px;
+    }
+
+    /* Improve text readability */
+    .text-container-adult {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .text-container-adult p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left;
+        color: #333;
+        white-space: pre-line;
+        margin: 0;
+    }
+
+    /* Style the buttons container */
     .adult-buttons-container {
         flex-direction: column;
         align-items: center;
         gap: 15px;
         padding: 0 20px;
         margin-bottom: 60px;
-        margin-top: 0px;
     }
 
-    .adult-button {
+    .dance-button {
         width: 100%;
         max-width: 280px;
     }
+    .dance-classes-title-underline-adult {
+        margin-bottom: 40px;  /* Adds space between underline and image */
+    }
+
 }

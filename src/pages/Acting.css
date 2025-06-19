@@ -44,6 +44,36 @@
 }
 
 @media screen and (max-width: 425px) {
+    /* Adjust the image size */
+    .acting-image {
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .acting-image img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Improve text readability */
+    .text-container-acro {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .text-container-acro p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left;
+        color: #333;
+        white-space: pre-line;
+        margin: 0;
+    }
+
+    /* Style the buttons container */
     .acting-buttons-container {
         flex-direction: column;
         align-items: center;
@@ -52,7 +82,7 @@
         margin-bottom: 60px;
     }
 
-    .acting-button {
+    .dance-button {
         width: 100%;
         max-width: 280px;
     }
