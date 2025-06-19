@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 
 interface UseInViewOptions {
@@ -14,11 +15,17 @@ const useInView = <T extends HTMLElement>(options: UseInViewOptions = {}) => {
 
     const observer = new IntersectionObserver(
         ([entry]) => {
-          setInView(entry.isIntersecting);
+          const isIntersecting = entry.isIntersecting;
+          setInView(isIntersecting);
+
+          // If triggerOnce is true and element is intersecting,
+          // disconnect the observer
+          if (options.triggerOnce && isIntersecting) {
+            observer.disconnect();
+          }
         },
         {
           threshold: options.threshold || 0,
-          triggerOnce: options.triggerOnce || false,
         }
     );
 
@@ -26,7 +33,6 @@ const useInView = <T extends HTMLElement>(options: UseInViewOptions = {}) => {
 
     return () => {
       if (ref.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(ref.current);
       }
     };
