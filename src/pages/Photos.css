@@ -1,5 +1,5 @@
 .underline-videos {
-  width: 300px;
+  width: 200px;
   height: 6px;
   background-color: #408eb2;
   border-radius: 3px;
@@ -28,4 +28,23 @@
   text-align: center; /* Center the text inside the paragraph */
   margin-bottom: 50px;
   margin-top: -20px;
+}
+
+@media screen and (max-width: 425px) {
+  .video-container {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .text-container-photos {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .text-container-photos p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 20px auto;
+    margin-bottom: 80px;
+  }
 }

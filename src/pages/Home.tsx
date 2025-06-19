@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import DanceClasses from "../Hooks/useInViewDance";

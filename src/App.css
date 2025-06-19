@@ -193,7 +193,8 @@ Try adding these to all queries here (or maybe try Home.css)*/
     .jazz-page,
     .modern-page,
     .mommy-me-page,
-    .musical-theater-page {
+    .musical-theater-page,
+    .our-team-page {
         display: flex;
         flex-direction: column;
         flex: 1 0 auto;
@@ -324,6 +325,8 @@ Try adding these to all queries here (or maybe try Home.css)*/
     .next-steps-heading{
         margin-top: -10px;
     }
+
+
 
 }
 

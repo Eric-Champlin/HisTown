@@ -1,5 +1,5 @@
 .dance-classes-title-underline-creative-movement {
-    width: 300px;
+    width: 250px;
     height: 6px;
     background-color: #408eb2;
     border-radius: 3px;
@@ -16,4 +16,28 @@
     height: auto;
     border-radius: 15px;
     margin-bottom: 20px;
-  } 
+  }
+
+@media screen and (max-width: 425px) {
+    .creative-image2 img {
+        max-width: 250px; /* Even smaller on mobile */
+        margin: 30px auto 20px;
+        margin-top: 50px;
+    }
+
+    .all-dances-button {
+        background-color: #408eb2;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 auto 20px auto; /* Center horizontally with auto margins */
+        display: block;
+        text-decoration: none !important;
+        margin-bottom: 80px;
+    }
+}
