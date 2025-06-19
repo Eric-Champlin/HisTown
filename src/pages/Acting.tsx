@@ -38,9 +38,14 @@ Aspiring young actors will find a fun and exciting challenge in this Beginning/I
           </p>
           </div>
 
-<Link to="/classes/featured" className="all-dances-button-link">
-    <button className="all-dances-button">ALL FEATURED</button>
-  </Link>
+        <div className="acting-buttons-container">
+            <Link to="/classes">
+                <button className="dance-button">ALL CLASSES</button>
+            </Link>
+            <Link to="/about/our-team">
+                <button className="dance-button">OUR TEAM</button>
+            </Link>
+        </div>
 
 <NextSteps />
 

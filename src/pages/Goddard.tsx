@@ -37,9 +37,14 @@ Was this removed from HisTown's website?
         </p>
           </div>
 
-<Link to="/classes/featured" className="all-dances-button-link">
-<button className="all-dances-button">ALL FEATURED</button>
-</Link>
+        <div className="goddard-buttons-container">
+            <Link to="/classes">
+                <button className="dance-button">ALL CLASSES</button>
+            </Link>
+            <Link to="/about/our-team">
+                <button className="dance-button">OUR TEAM</button>
+            </Link>
+        </div>
 
 <NextSteps />
 

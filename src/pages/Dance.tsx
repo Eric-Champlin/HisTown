@@ -55,7 +55,17 @@ const Dance = () => {
         ))}
       </div>
 
-      <NextSteps />
+        <div className="dance-buttons-container">
+            <Link to="/classes">
+                <button className="dance-button">ALL CLASSES</button>
+            </Link>
+            <Link to="/about/our-team">
+                <button className="dance-button">OUR TEAM</button>
+            </Link>
+        </div>
+
+
+        <NextSteps />
 
       <Footer />
     </div>

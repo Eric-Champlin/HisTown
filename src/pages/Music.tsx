@@ -68,10 +68,14 @@ const Classes = () => {
 
       </div>
 
-
-        <Link to="/about/our-team" className="all-music-button-link">
-            <button className="all-music-button">OUR TEAM</button>
-        </Link>
+        <div className="music-buttons-container">
+            <Link to="/classes">
+                <button className="dance-button">ALL CLASSES</button>
+            </Link>
+            <Link to="/about/our-team">
+                <button className="dance-button">OUR TEAM</button>
+            </Link>
+        </div>
       <NextSteps />
 
       <Footer />
