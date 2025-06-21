@@ -35,7 +35,7 @@ const Dance = () => {
 
 
       {/* Title & Underline */}
-      <h1 className="dance-classes-title">DANCE</h1>
+      <h1 className="dance-classes-title">Dance</h1>
       <div className="dance-classes-title-underline"></div>
 
       {/* 4×3 Grid of Cards */}
