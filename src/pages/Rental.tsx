@@ -16,7 +16,7 @@ const Rental = () => {
 
       <div style={{ textAlign: "center" }}>
         <h1 className="dance-classes-title">STUDIO RENTAL</h1>
-        <div className="underline-birthday"></div>
+        <div className="underline-rental"></div>
       </div>
 
       <div className="acro4-image">

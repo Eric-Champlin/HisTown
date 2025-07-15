@@ -22,7 +22,7 @@ const Acro = () => {
 
 
         <div style={{ textAlign: "center" }}>
-  <h1 className="dance-classes-title-owners">OUR STORY</h1>
+  <h1 className="dance-classes-title">OUR STORY</h1>
   <div className="dance-teachers-title-underline-kaitlin"></div>
 </div>
 

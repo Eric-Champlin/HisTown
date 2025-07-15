@@ -22,7 +22,7 @@ const OurTeamOwners = () => {
 
 
         <div style={{ textAlign: "center" }}>
-  <h1 className="dance-classes-title-owners">THE FARLEY'S</h1>
+  <h1 className="dance-classes-title">THE FARLEY'S</h1>
   <div className="dance-classes-title-underline-owners"></div>
 </div>
 

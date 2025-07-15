@@ -37,3 +37,48 @@
     margin-bottom: 100px;
     margin-top: -50px;
   }
+
+@media screen and (max-width: 425px){
+
+  .underline-rental {
+    width: 200px;
+    height: 6px;
+    background-color: #408eb2;
+    border-radius: 3px;
+    margin: 0 auto 40px auto;
+    transform: skewX(-15deg);
+  }
+
+  .acro4-image img {
+    display: block;
+    margin: auto; /* 60px top margin, auto left/right to center, 0 bottom margin */
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: -20px;
+  }
+
+  .text-container-acro2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 20px auto 80px;
+    max-width: 840px;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+
+
+  .acro5-image img {
+    display: block;
+    margin: auto; /* 60px top margin, auto left/right to center, 0 bottom margin */
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    margin-top: -80px;
+  }
+
+
+}
