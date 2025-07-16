@@ -2,43 +2,40 @@
 import { useEffect, useRef, useState } from "react";
 
 interface UseInViewOptions {
-  threshold?: number;
-  triggerOnce?: boolean;
+    threshold?: number;
+    triggerOnce?: boolean;
 }
 
 const useInView = <T extends HTMLElement>(options: UseInViewOptions = {}) => {
-  const [inView, setInView] = useState(false);
-  const ref = useRef<T>(null);
+    const [inView, setInView] = useState(false);
+    const ref = useRef<T>(null);
 
-  useEffect(() => {
-    if (!ref.current) return;
+    useEffect(() => {
+        const currentElement = ref.current;
+        if (!currentElement) return;
 
-    const observer = new IntersectionObserver(
-        ([entry]) => {
-          const isIntersecting = entry.isIntersecting;
-          setInView(isIntersecting);
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                const isIntersecting = entry.isIntersecting;
+                setInView(isIntersecting);
 
-          // If triggerOnce is true and element is intersecting,
-          // disconnect the observer
-          if (options.triggerOnce && isIntersecting) {
-            observer.disconnect();
-          }
-        },
-        {
-          threshold: options.threshold || 0,
-        }
-    );
+                if (options.triggerOnce && isIntersecting) {
+                    observer.disconnect();
+                }
+            },
+            {
+                threshold: options.threshold || 0,
+            }
+        );
 
-    observer.observe(ref.current);
+        observer.observe(currentElement);
 
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [options.threshold, options.triggerOnce]);
+        return () => {
+            observer.unobserve(currentElement);
+        };
+    }, [options.threshold, options.triggerOnce]);
 
-  return { ref, inView };
+    return { ref, inView };
 };
 
 export default useInView;
