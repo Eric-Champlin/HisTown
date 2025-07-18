@@ -189,10 +189,12 @@
     }
 
     .testimonials-page-card {
-        width: 300px !important;
+        width: 250px !important;
         padding: 1.5rem !important;
         height: auto !important;
         min-height: 250px !important;
+        margin-bottom: -50px;
+
     }
 
     .testimonials-page-author {
@@ -224,6 +226,7 @@
     .testimonials-page-images {
         flex-direction: column;
         gap: 15px;
+
     }
 
     .testimonials-page-images img {
@@ -241,6 +244,6 @@
     .testimonials-page-images img:last-child {
         width: 100%;
         max-width: 280px;
-        margin-bottom: -40px;
+        margin-bottom: 0px;
     }
 }
