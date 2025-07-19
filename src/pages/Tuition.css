@@ -1,11 +1,4 @@
-.dance-classes-title-underline-tuition {
-    width: 200px;
-    height: 6px;
-    background-color: #408eb2;
-    border-radius: 3px;
-    margin: 0 auto 40px auto;
-    transform: skewX(-15deg);
-  }
+
 
 /* Tuition.css */
 .tuition-page {
@@ -43,22 +36,21 @@
 }
 
 .main-underline {
-  width: 200px; /* Longer width for main underline */
-  height: 5px;   /* Thicker height for main underline */
+  width: 200px;
+  height: 6px;
   background-color: #408eb2;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 15px;
   border-radius: 3px;
+  margin: 0 auto;
+  transform: skewX(-15deg);
 }
 
 .section-underline {
-  width: 80px;
-  height: 3px;
+  width: 50px;
+  height: 4px;
   background-color: #408eb2;
-  margin-top: 5px;
-  margin-bottom: 15px;
   border-radius: 3px;
+  margin: 0 auto;
+  transform: skewX(-15deg);
 }
 
 .tuition-content {
