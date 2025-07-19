@@ -37,7 +37,6 @@ import OurTeamAimee from "./pages/OurTeamAimee";
 import OurTeamAllison from "./pages/OurTeamAllison";
 import OurTeamLauren from "./pages/OurTeamLauren";
 import OurTeamDelia from "./pages/OurTeamDelia";
-import OurTeamMusic from "./pages/OurTeamMusic";
 import OurTeamOwners from "./pages/OurTeamOwners";
 import Photos from "./pages/Photos";
 import Piano from "./pages/Piano";
@@ -105,7 +104,6 @@ const App = () => {
           <Route path="/about/our-team/dance/lauren" element={<OurTeamLauren />} />
           <Route path="/about/our-team/dance/delia" element={<OurTeamDelia />} />
 
-          <Route path="/about/our-team/music" element={<OurTeamMusic />} />
           <Route path="/about/photos-videos" element={<Photos />} />
           <Route path="/classes/piano-lessons" element={<Piano />} />
           <Route path="/more/studio-rental" element={<Rental />} />
