@@ -895,7 +895,7 @@ body {
   .our-mission {
     flex-direction: column;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: -20px;
     gap: 30px;
   }
 
@@ -915,45 +915,97 @@ body {
 
   .image-container img {
     max-width: 400px;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+  }
+
+  /* Music/Band/Other Lessons Sections */
+  .dance-text-container{
+    margin-top: -25px;
+
+  }
+
+  .dance-text-container,
+  .music-text-container {
+    margin-bottom: -180px;
+  }
+
+  .featured-text-container{
+    padding: 5px;
+    margin-bottom: 0px;
   }
 
   /* Music/Band/Other Lessons Sections */
   .dance-lessons-inner,
   .music-program-inner,
   .featured-lessons-inner {
-    flex-direction: column;
-    padding: 20px;
-    gap: 40px;
-  }
-
-  .dance-text-container,
-  .music-text-container,
-  .featured-text-container {
-    text-align: center;
-
+    padding: 5px;
+    gap: 5px;
+    width: 95%; /* Reduce side margins */
   }
 
   .dance-text-container h1,
   .music-text-container h1,
   .featured-text-container h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+    margin-bottom: 25px;
   }
 
   .dance-text-container p,
   .music-text-container p,
   .featured-text-container p {
-    font-size: 1.1rem;
-    margin: 20px auto;
-    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 15px auto;
   }
 
   .dance-image-container img,
   .music-image-container img,
   .featured-image-container img {
-    max-width: 400px;
-    margin: 20px auto;
+    display: none;
   }
+
+  .our-mission h1::after {
+    width: 180px;
+    height: 5px;
+    bottom: -10px;
+    left: 50%;
+  }
+
+  .dance-text-container h1::after {
+    width: 160px;
+    height: 5px;
+    bottom: -10px;
+    left: 50%;
+
+  }
+
+  .music-text-container h1::after {
+    width: 160px;
+    height: 5px;
+    bottom: -10px;
+    left: 50%;
+
+  }
+
+  .featured-text-container h1::after {
+    width: 100px;
+    height: 5px;
+    bottom: -10px;
+    left: 50%;
+
+  }
+
+  .meet-team h1::after {
+    width: 200px;
+    height: 6px;
+    bottom: -10px;
+    left: 50%;
+
+  }
+
+
 
   /* Class Box adjustments */
   .class-box {
