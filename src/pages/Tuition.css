@@ -42,23 +42,26 @@
   margin-bottom: 10px;
 }
 
-.main-underline {
-  width: 200px; /* Longer width for main underline */
-  height: 5px;   /* Thicker height for main underline */
+.tuition-title-underline{
+  width: 200px;
+  height: 6px;
   background-color: #408eb2;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 15px;
   border-radius: 3px;
+  margin: 0 auto 40px auto;
+  margin-bottom: -20px;
+  transform: skewX(-15deg);
 }
 
-.section-underline {
+
+
+.tuition-section-underline {
   width: 80px;
   height: 3px;
   background-color: #408eb2;
-  margin-top: 5px;
-  margin-bottom: 15px;
   border-radius: 3px;
+  margin: 0 auto 40px auto;
+  margin-bottom: 0px;
+  transform: skewX(-15deg);
 }
 
 .tuition-content {

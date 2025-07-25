@@ -251,16 +251,13 @@
     }
 
     .testimonials-cards {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
         gap: 15px;
         width: 100%;
         padding: 0 !important;
         margin: 0 !important;
-
     }
-
 
 
     .carousel .slide {
@@ -269,11 +266,14 @@
     }
 
     .testimonial-card {
-        width: 300px !important;
+        width: 100% !important; /* Make cards fill their grid space */
+        max-width: 280px !important; /* Limit maximum width */
         padding: 1.5rem !important;
         height: auto !important;
         min-height: 250px !important;
+        margin: 0 auto !important; /* Center cards in their grid space */
     }
+
 
     .testimonial-author {
         position: relative !important;

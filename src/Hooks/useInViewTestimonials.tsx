@@ -8,16 +8,30 @@ const Testimonials = () => {
   const { ref: testimonialsRef, inView: testimonialsVisible } =
       useInView<HTMLDivElement>({ threshold: 0.2 });
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 425);
+  // Add tablet breakpoint
+  const [viewportSize, setViewportSize] = useState(() => {
+    const width = window.innerWidth;
+    if (width <= 425) return 'mobile';
+    if (width <= 768) return 'tablet';
+    return 'desktop';
+  });
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 425);
+      const width = window.innerWidth;
+      if (width <= 425) {
+        setViewportSize('mobile');
+      } else if (width <= 768) {
+        setViewportSize('tablet');
+      } else {
+        setViewportSize('desktop');
+      }
     };
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
 
 
   const testimonials = [
@@ -153,7 +167,7 @@ const Testimonials = () => {
                 className: "testimonial-carousel"
               } as any}
           >
-            {isMobile ? (
+            {viewportSize === 'mobile' ? (
                 // Mobile view - show one testimonial per slide
                 testimonials.map((testimonial, index) => (
                     <div className="testimonials-cards" key={index}>
@@ -164,7 +178,21 @@ const Testimonials = () => {
                       </div>
                     </div>
                 ))
+            ) : viewportSize === 'tablet' ? (
+                // Tablet view - show two testimonials per slide
+                Array.from({ length: Math.ceil(testimonials.length / 2) }).map((_, groupIndex) => (
+                    <div className="testimonials-cards" key={groupIndex}>
+                      {testimonials.slice(groupIndex * 2, groupIndex * 2 + 2).map((testimonial, index) => (
+                          <div key={index} className="testimonial-card">
+                            <h3 className="testimonial-author">{testimonial.author}</h3>
+                            <div className="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p className="testimonial-text">{testimonial.text}</p>
+                          </div>
+                      ))}
+                    </div>
+                ))
             ) : (
+
                 // Desktop view - show three testimonials per slide
                 Array.from({ length: Math.ceil(testimonials.length / 3) }).map((_, groupIndex) => (
                     <div className="testimonials-cards" key={groupIndex}>

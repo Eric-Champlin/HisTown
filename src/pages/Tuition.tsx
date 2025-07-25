@@ -15,13 +15,13 @@ const Tuition = () => {
 
       <div className="tuition-header">
         <h1 className="tuition-title">TUITION & FEES</h1>
-        <div className="main-underline"></div>
+        <div className="tuition-title-underline"></div>
       </div>
 
       <div className="tuition-content">
         <section className="tuition-section">
           <h2>Tuition</h2>
-          <div className="section-underline"></div>
+          <div className="tuition-section-underline"></div>
           <p>
             Tuition is calculated and based on the number of classes in any given
             semester (August - December and January - May) and is broken into
@@ -79,7 +79,7 @@ const Tuition = () => {
         <section className="fees-section">
           <div className="fee-column">
             <h3>Registration Fees</h3>
-            <div className="section-underline"></div>
+            <div className="tuition-section-underline"></div>
             <p>
               There is a $50 annual registration fee per student with a $125 per
               family cap (Non-refundable and non-transferable.) The
@@ -88,7 +88,7 @@ const Tuition = () => {
             </p>
 
             <h3>Costume Fees</h3>
-            <div className="section-underline"></div>
+            <div className="tuition-section-underline"></div>
             <p>
               Costume fees for each performance vary. Histown strives to keep
               each cost down and our costume fees are typically very
@@ -103,7 +103,7 @@ const Tuition = () => {
             </p>
 
             <h3>Refunds & Withdrawals</h3>
-            <div className="section-underline"></div>
+            <div className="tuition-section-underline"></div>
             <p>
               There are no refunds for missed classes or canceled classes. If a
               class is canceled due to weather or you simply missed your class,
@@ -121,7 +121,7 @@ const Tuition = () => {
 
           <div className="fee-column">
             <h3>Recital Fees</h3>
-            <div className="section-underline"></div>
+            <div className="tuition-section-underline"></div>
             <p>
               Histown has a Spring performance and a Winter performance every
               year. Performances are held in mid-May and mid-December. Every
@@ -140,7 +140,7 @@ const Tuition = () => {
             </p>
 
             <h3>Late Payments</h3>
-            <div className="section-underline"></div>
+            <div className="tuition-section-underline"></div>
             <p>
               We do email statements and you can check your balance online on
               your account with HisTown where you can keep track of payments and

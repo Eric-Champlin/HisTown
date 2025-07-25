@@ -102,7 +102,10 @@ const NavBar = () => {
               <Link to="/classes/dress-code">Dress Code</Link>
               <Link to="/classes/tuition-and-fees">Tuition &amp; Fees</Link>
             </div>
+
+
           </div>
+
         </li>
 
         {/* About Dropdown */}
@@ -129,7 +132,11 @@ const NavBar = () => {
             <Link to="/more/contact">CONTACT</Link>
           </div>
         </li>
-
+        <li>
+        <Link to="/FAQ" className="navbar-link">
+          FAQ <FaChevronDown className="dropdown-chevron" />
+        </Link>
+        </li>
         <li>
           <Link to="/store" className="navbar-link">
             STORE
