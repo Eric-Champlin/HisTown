@@ -127,15 +127,19 @@ const NavBar = () => {
             MORE <FaChevronDown className="dropdown-chevron" />
           </Link>
           <div className="dropdown-content">
-            <Link to="/more/birthday-parties">BIRTHDAY PARTIES</Link>
-            <Link to="/more/studio-rental">STUDIO RENTAL</Link>
-            <Link to="/more/contact">CONTACT</Link>
+              <Link to="/more/contact">CONTACT</Link>
+              <Link to="/classes/dress-code">DRESS CODE</Link>
+              <Link to="/more/studio-rental">STUDIO RENTAL</Link>
+              <Link to="/classes/tuition-and-fees">TUITION &amp; FEES</Link>
+
+
+
+              <Link to="/classes/class-schedule">CLASS SCHEDULE</Link>
+              <Link to="/more/birthday-parties">BIRTHDAY PARTIES</Link>
           </div>
         </li>
         <li>
-        <Link to="/FAQ" className="navbar-link">
-          FAQ <FaChevronDown className="dropdown-chevron" />
-        </Link>
+
         </li>
         <li>
           <Link to="/store" className="navbar-link">
