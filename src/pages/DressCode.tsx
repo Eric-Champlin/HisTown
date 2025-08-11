@@ -2,7 +2,6 @@ import React from "react";
 import "./DressCode.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import BannerCarousel from "../components/BannerCarousel.tsx";
 import NextSteps from "../Hooks/useInViewNextSteps.tsx";
 

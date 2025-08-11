@@ -3,7 +3,6 @@ import "./Schedule.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextSteps from "../Hooks/useInViewNextSteps";
-import { Link } from "react-router-dom";
 import BannerCarousel from "../components/BannerCarousel.tsx";
 
 
