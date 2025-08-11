@@ -18,6 +18,10 @@ const Tuition = () => {
         <div className="tuition-title-underline"></div>
       </div>
 
+        <div className="schedule-image">
+            <img src="https://i.imgur.com/s2g3QPW.jpeg" alt="Dancers" />
+        </div>
+
       <div className="tuition-content">
         <section className="tuition-section">
           <h2>Tuition</h2>
@@ -151,11 +155,7 @@ const Tuition = () => {
         </section>
       </div>
 
-      <div className="faq-button-container">
-        <Link to="/FAQ" className="all-dances-button-link">
-          <button className="all-dances-button">ALL FAQ</button>
-        </Link>
-      </div>
+
 
       <NextSteps />
       <Footer />

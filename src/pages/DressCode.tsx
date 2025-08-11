@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import BannerCarousel from "../components/BannerCarousel.tsx";
+import NextSteps from "../Hooks/useInViewNextSteps.tsx";
 
 
 const DressCode = () => {
@@ -80,10 +81,8 @@ const DressCode = () => {
 
       </div>
 
-      <Link to="/FAQ" className="all-dances-button-link">
-      <button className="all-dances-button">ALL FAQ</button>
-      </Link>
 
+        <NextSteps />
       <Footer />
     </div>
   );

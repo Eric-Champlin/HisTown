@@ -16,8 +16,8 @@ const Schedule = () => {
         <BannerCarousel />
 
       <div style={{ textAlign: "center" }}>
-  <h1 className="dance-classes-title">SCHEDULE</h1>
-  <div className="dance-classes-title-underline-schedule"></div>
+  <h1 className="schedule-title">SCHEDULE</h1>
+  <div className="title-underline-schedule"></div>
 </div>
 
 
@@ -39,7 +39,7 @@ const Schedule = () => {
 
         <div className="text-container-acro">
 
-        <p>
+        <p className="padding-bottom">
         <div className="calendar-info">
   <h1 className="header">2024 - 2025 Calendar</h1> <br />
   June 3rd - August 2nd - Summer Dance Camps<br />
@@ -70,9 +70,7 @@ const Schedule = () => {
         </p>
           </div>
 
-<Link to="/FAQ" className="all-dances-button-link">
-<button className="all-dances-button">ALL FAQ</button>
-</Link>
+
 
 <NextSteps />
 

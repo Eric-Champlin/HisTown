@@ -1,5 +1,15 @@
-.dance-classes-title-underline-schedule {
-    width: 200px;
+.schedule-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.title-underline-schedule {
+    width: 150px;
     height: 6px;
     background-color: #408eb2;
     border-radius: 3px;
@@ -10,17 +20,18 @@
   }
 
   .schedule-image img {
-    display: block;
-    margin: 60px auto 0; 
-    max-width: 550px;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
+      display: block;
+      margin: 60px auto 0;
+      max-width: 550px;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
   } 
 
   .header {
     position: relative;
     display: inline-block;
+    margin-top: -10px;
   }
   
   .header::after {
@@ -31,5 +42,61 @@
     background-color: #408eb2;
     margin: 0.5rem auto 0; /* adjust the top margin as needed */
   }
-  
 
+.padding-bottom{
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 425px){
+
+    .schedule-title {
+        font-size: 2.2rem;
+        font-weight: 900;
+        color: #333;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+
+    .title-underline-schedule {
+        width: 120px;
+        height: 5px;
+        background-color: #408eb2;
+        border-radius: 3px;
+        margin: 0 auto 40px auto;
+        transform: skewX(-15deg);
+        margin-bottom: -35px;
+
+    }
+
+    .schedule-image img {
+        display: block;
+        margin: 60px auto 0;
+        max-width: 350px;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        position: relative;
+        display: inline-block;
+        margin-top: -10px;
+    }
+
+    .header::after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 6px;
+        background-color: #408eb2;
+        margin: 0.5rem auto 0; /* adjust the top margin as needed */
+    }
+
+    .padding-bottom{
+        padding-bottom: 50px;
+    }
+
+}

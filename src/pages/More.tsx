@@ -20,7 +20,7 @@ const Classes = () => {
       {/* 3×2 Grid of Cards */}
       <div className="classes-grid">
 
-          <div className="classes-item">
+          <div className="classes-picture">
               <Link to="/classes/class-schedule" className="classes-card-link">
                   <div className="classes-card">
                       <img
@@ -33,7 +33,7 @@ const Classes = () => {
           </div>
 
           {/* 2. Music */}
-          <div className="classes-item">
+          <div className="classes-picture">
               <Link to="/classes/dress-code" className="classes-card-link">
                   <div className="classes-card">
                       <img
@@ -46,7 +46,7 @@ const Classes = () => {
           </div>
 
           {/* 3. Acting */}
-          <div className="classes-item">
+          <div className="classes-picture">
               <Link to="/classes/tuition-and-fees" className="classes-card-link">
                   <div className="classes-card">
                       <img
